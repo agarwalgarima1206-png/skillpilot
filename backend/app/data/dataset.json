@@ -1,0 +1,2525 @@
+{
+  "roles": [
+    {
+      "role_name": "Data Scientist",
+      "onet_soc_code": "15-2051.00",
+      "source": "O*NET OnLine (onetonline.org)",
+      "tasks": [
+        {
+          "task": "Analyze, manipulate, or process large sets of data using statistical software.",
+          "importance": 83,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Create graphs, charts, or other visualizations to convey the results of data analysis using specialized software.",
+          "importance": 83,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Test, validate, and reformulate models to ensure accurate prediction of outcomes of interest.",
+          "importance": 81,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Deliver oral or written presentations of the results of mathematical modeling and data analysis to management or other end users.",
+          "importance": 80,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Recommend data-driven solutions to key stakeholders.",
+          "importance": 79,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Identify business problems or management objectives that can be addressed through data analysis.",
+          "importance": 78,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Compare models using statistical performance metrics, such as loss functions or proportion of explained variance.",
+          "importance": 76,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Clean and manipulate raw data using statistical software.",
+          "importance": 76,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Identify solutions to business problems, such as budgeting, staffing, and marketing decisions, using the results of data analysis.",
+          "importance": 73,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Apply feature selection algorithms to models predicting outcomes of interest, such as sales, attrition, and healthcare use.",
+          "importance": 69,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Identify relationships and trends or any factors that could affect the results of research.",
+          "importance": 67,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Write new functions or applications in programming languages to conduct analyses.",
+          "importance": 65,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Read scientific articles, conference papers, or other sources of research to identify emerging analytic trends and technologies.",
+          "importance": 60,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Propose solutions in engineering, the sciences, and other fields using mathematical theories and techniques.",
+          "importance": 51,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Apply sampling techniques to determine groups to be surveyed or use complete enumeration methods.",
+          "importance": 50,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Design surveys, opinion polls, or other instruments to collect data.",
+          "importance": 49,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Interview stakeholders to identify questions or problems to address through data analysis.",
+          "importance": null,
+          "category": "New",
+          "ai_classification": null
+        }
+      ],
+      "essential_skills": [
+        {
+          "skill": "Mathematics",
+          "description": "Using mathematics to solve problems.",
+          "importance": 85
+        },
+        {
+          "skill": "Critical Thinking",
+          "description": "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems.",
+          "importance": 81
+        },
+        {
+          "skill": "Reading Comprehension",
+          "description": "Understanding written sentences and paragraphs in work-related documents.",
+          "importance": 72
+        },
+        {
+          "skill": "Active Learning",
+          "description": "Understanding the implications of new information for both current and future problem-solving and decision-making.",
+          "importance": 66
+        },
+        {
+          "skill": "Speaking",
+          "description": "Talking to others to convey information effectively.",
+          "importance": 66
+        },
+        {
+          "skill": "Active Listening",
+          "description": "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",
+          "importance": 63
+        },
+        {
+          "skill": "Writing",
+          "description": "Communicating effectively in writing as appropriate for the needs of the audience.",
+          "importance": 63
+        },
+        {
+          "skill": "Monitoring",
+          "description": "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",
+          "importance": 56
+        },
+        {
+          "skill": "Learning Strategies",
+          "description": "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.",
+          "importance": 44
+        },
+        {
+          "skill": "Science",
+          "description": "Using scientific rules and methods to solve problems.",
+          "importance": 38
+        }
+      ],
+      "transferable_skills": [
+        {
+          "skill": "Complex Problem Solving",
+          "description": "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.",
+          "importance": 69
+        },
+        {
+          "skill": "Programming",
+          "description": "Writing computer programs for various purposes.",
+          "importance": 69
+        },
+        {
+          "skill": "Judgment and Decision Making",
+          "description": "Considering the relative costs and benefits of potential actions to choose the most appropriate one.",
+          "importance": 60
+        },
+        {
+          "skill": "Time Management",
+          "description": "Managing one's own time and the time of others.",
+          "importance": 50
+        },
+        {
+          "skill": "Coordination",
+          "description": "Adjusting actions in relation to others' actions.",
+          "importance": 47
+        },
+        {
+          "skill": "Social Perceptiveness",
+          "description": "Being aware of others' reactions and understanding why they react as they do.",
+          "importance": 47
+        },
+        {
+          "skill": "Instructing",
+          "description": "Teaching others how to do something.",
+          "importance": 44
+        },
+        {
+          "skill": "Persuasion",
+          "description": "Persuading others to change their minds or behavior.",
+          "importance": 44
+        },
+        {
+          "skill": "Systems Analysis",
+          "description": "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",
+          "importance": 44
+        },
+        {
+          "skill": "Systems Evaluation",
+          "description": "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",
+          "importance": 44
+        },
+        {
+          "skill": "Service Orientation",
+          "description": "Actively looking for ways to help people.",
+          "importance": 38
+        },
+        {
+          "skill": "Management of Personnel Resources",
+          "description": "Motivating, developing, and directing people as they work, identifying the best people for the job.",
+          "importance": 35
+        },
+        {
+          "skill": "Negotiation",
+          "description": "Bringing others together and trying to reconcile differences.",
+          "importance": 31
+        },
+        {
+          "skill": "Operations Monitoring",
+          "description": "Watching gauges, dials, or other indicators to make sure a machine is working properly.",
+          "importance": 22
+        },
+        {
+          "skill": "Quality Control Analysis",
+          "description": "Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",
+          "importance": 22
+        },
+        {
+          "skill": "Technology Design",
+          "description": "Generating or adapting equipment and technology to serve user needs.",
+          "importance": 16
+        },
+        {
+          "skill": "Management of Material Resources",
+          "description": "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",
+          "importance": 13
+        },
+        {
+          "skill": "Operations Analysis",
+          "description": "Analyzing needs and product requirements to create a design.",
+          "importance": 13
+        },
+        {
+          "skill": "Management of Financial Resources",
+          "description": "Determining how money will be spent to get the work done, and accounting for these expenditures.",
+          "importance": 10
+        },
+        {
+          "skill": "Operation and Control",
+          "description": "Controlling operations of equipment or systems.",
+          "importance": 6
+        },
+        {
+          "skill": "Equipment Selection",
+          "description": "Determining the kind of tools and equipment needed to do a job.",
+          "importance": 3
+        },
+        {
+          "skill": "Troubleshooting",
+          "description": "Determining causes of operating errors and deciding what to do about it.",
+          "importance": 3
+        },
+        {
+          "skill": "Equipment Maintenance",
+          "description": "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.",
+          "importance": 0
+        },
+        {
+          "skill": "Installation",
+          "description": "Installing equipment, machines, wiring, or programs to meet specifications.",
+          "importance": 0
+        },
+        {
+          "skill": "Repairing",
+          "description": "Repairing machines or systems using the needed tools.",
+          "importance": 0
+        }
+      ],
+      "knowledge": [
+        {
+          "area": "Mathematics",
+          "description": "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
+          "importance": 88
+        },
+        {
+          "area": "Computers and Electronics",
+          "description": "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
+          "importance": 81
+        },
+        {
+          "area": "English Language",
+          "description": "Knowledge of the structure and content of the English language including the meaning and spelling of words, and rules of composition and grammar.",
+          "importance": 50
+        },
+        {
+          "area": "Engineering and Technology",
+          "description": "Knowledge of the practical application of engineering science and technology. This includes applying principles, techniques, procedures, and equipment to the design and production of various goods and services.",
+          "importance": 47
+        },
+        {
+          "area": "Education and Training",
+          "description": "Knowledge of principles and methods for curriculum and training design, teaching and instruction for individuals and groups, and the measurement of training effects.",
+          "importance": 32
+        },
+        {
+          "area": "Communications and Media",
+          "description": "Knowledge of media production, communication, and dissemination techniques and methods. This includes alternative ways to inform and entertain via written, oral, and visual media.",
+          "importance": 30
+        },
+        {
+          "area": "Administration and Management",
+          "description": "Knowledge of business and management principles involved in strategic planning, resource allocation, human resources modeling, leadership technique, production methods, and coordination of people and resources.",
+          "importance": 28
+        },
+        {
+          "area": "Design",
+          "description": "Knowledge of design techniques, tools, and principles involved in production of precision technical plans, blueprints, drawings, and models.",
+          "importance": 28
+        },
+        {
+          "area": "Administrative",
+          "description": "Knowledge of administrative and office procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and workplace terminology.",
+          "importance": 24
+        },
+        {
+          "area": "Customer and Personal Service",
+          "description": "Knowledge of principles and processes for providing customer and personal services. This includes customer needs assessment, meeting quality standards for services, and evaluation of customer satisfaction.",
+          "importance": 23
+        },
+        {
+          "area": "Psychology",
+          "description": "Knowledge of human behavior and performance; individual differences in ability, personality, and interests; learning and motivation; psychological research methods; and the assessment and treatment of behavioral and affective disorders.",
+          "importance": 23
+        },
+        {
+          "area": "Sales and Marketing",
+          "description": "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
+          "importance": 23
+        },
+        {
+          "area": "Economics and Accounting",
+          "description": "Knowledge of economic and accounting principles and practices, the financial markets, banking, and the analysis and reporting of financial data.",
+          "importance": 21
+        },
+        {
+          "area": "Physics",
+          "description": "Knowledge and prediction of physical principles, laws, their interrelationships, and applications to understanding fluid, material, and atmospheric dynamics, and mechanical, electrical, atomic and sub-atomic structures and processes.",
+          "importance": 21
+        },
+        {
+          "area": "Production and Processing",
+          "description": "Knowledge of raw materials, production processes, quality control, costs, and other techniques for maximizing the effective manufacture and distribution of goods.",
+          "importance": 21
+        },
+        {
+          "area": "Personnel and Human Resources",
+          "description": "Knowledge of principles and procedures for personnel recruitment, selection, training, compensation and benefits, labor relations and negotiation, and personnel information systems.",
+          "importance": 20
+        },
+        {
+          "area": "Sociology and Anthropology",
+          "description": "Knowledge of group behavior and dynamics, societal trends and influences, human migrations, ethnicity, cultures, and their history and origins.",
+          "importance": 18
+        },
+        {
+          "area": "Law and Government",
+          "description": "Knowledge of laws, legal codes, court procedures, precedents, government regulations, executive orders, agency rules, and the democratic political process.",
+          "importance": 17
+        },
+        {
+          "area": "Public Safety and Security",
+          "description": "Knowledge of relevant equipment, policies, procedures, and strategies to promote effective local, state, or national security operations for the protection of people, data, property, and institutions.",
+          "importance": 14
+        },
+        {
+          "area": "Geography",
+          "description": "Knowledge of principles and methods for describing the features of land, sea, and air masses, including their physical characteristics, locations, interrelationships, and distribution of plant, animal, and human life.",
+          "importance": 13
+        },
+        {
+          "area": "Telecommunications",
+          "description": "Knowledge of transmission, broadcasting, switching, control, and operation of telecommunications systems.",
+          "importance": 12
+        },
+        {
+          "area": "Medicine and Dentistry",
+          "description": "Knowledge of the information and techniques needed to diagnose and treat human injuries, diseases, and deformities. This includes symptoms, treatment alternatives, drug properties and interactions, and preventive health-care measures.",
+          "importance": 11
+        },
+        {
+          "area": "Philosophy and Theology",
+          "description": "Knowledge of different philosophical systems and religions. This includes their basic principles, values, ethics, ways of thinking, customs, practices, and their impact on human culture.",
+          "importance": 10
+        },
+        {
+          "area": "Mechanical",
+          "description": "Knowledge of machines and tools, including their designs, uses, repair, and maintenance.",
+          "importance": 9
+        },
+        {
+          "area": "Building and Construction",
+          "description": "Knowledge of materials, methods, and the tools involved in the construction or repair of houses, buildings, or other structures such as highways and roads.",
+          "importance": 8
+        },
+        {
+          "area": "Biology",
+          "description": "Knowledge of plant and animal organisms, their tissues, cells, functions, interdependencies, and interactions with each other and the environment.",
+          "importance": 7
+        },
+        {
+          "area": "Chemistry",
+          "description": "Knowledge of the chemical composition, structure, and properties of substances and of the chemical processes and transformations that they undergo. This includes uses of chemicals and their interactions, danger signs, production techniques, and disposal methods.",
+          "importance": 7
+        },
+        {
+          "area": "Transportation",
+          "description": "Knowledge of principles and methods for moving people or goods by air, rail, sea, or road, including the relative costs and benefits.",
+          "importance": 7
+        },
+        {
+          "area": "History and Archeology",
+          "description": "Knowledge of historical events and their causes, indicators, and effects on civilizations and cultures.",
+          "importance": 6
+        },
+        {
+          "area": "Food Production",
+          "description": "Knowledge of techniques and equipment for planting, growing, and harvesting food products (both plant and animal) for consumption, including storage/handling techniques.",
+          "importance": 5
+        },
+        {
+          "area": "Therapy and Counseling",
+          "description": "Knowledge of principles, methods, and procedures for diagnosis, treatment, and rehabilitation of physical and mental dysfunctions, and for career counseling and guidance.",
+          "importance": 5
+        },
+        {
+          "area": "Fine Arts",
+          "description": "Knowledge of the theory and techniques required to compose, produce, and perform works of music, dance, visual arts, drama, and sculpture.",
+          "importance": 3
+        },
+        {
+          "area": "Foreign Language",
+          "description": "Knowledge of the structure and content of a foreign (non-English) language including the meaning and spelling of words, rules of composition and grammar, and pronunciation.",
+          "importance": 3
+        }
+      ],
+      "software_skills": [
+        {
+          "category": "Analytical or scientific software",
+          "examples": [
+            "IBM SPSS Statistics",
+            "SAS",
+            "TensorFlow",
+            "The MathWorks MATLAB"
+          ]
+        },
+        {
+          "category": "Application server software",
+          "examples": [
+            "Docker",
+            "GitHub",
+            "Kubernetes"
+          ]
+        },
+        {
+          "category": "Business intelligence and data analysis software",
+          "examples": [
+            "Alteryx software",
+            "Apache Spark",
+            "Google Looker Analytics",
+            "Microsoft Power BI"
+          ]
+        },
+        {
+          "category": "Cloud-based management software",
+          "examples": [
+            "Amazon Web Services AWS SageMaker",
+            "Google Cloud software"
+          ]
+        },
+        {
+          "category": "Content workflow software",
+          "examples": [
+            "Atlassian JIRA"
+          ]
+        },
+        {
+          "category": "Data base management system software",
+          "examples": [
+            "Apache Cassandra",
+            "Apache Hive",
+            "Elasticsearch",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "Data base reporting software",
+          "examples": [
+            "Reporting software"
+          ]
+        },
+        {
+          "category": "Data base user interface and query software",
+          "examples": [
+            "Amazon Elastic Compute Cloud EC2",
+            "Amazon Redshift",
+            "Amazon Web Services AWS software",
+            "PyTorch"
+          ]
+        },
+        {
+          "category": "Data mining software",
+          "examples": [
+            "Snowflake"
+          ]
+        },
+        {
+          "category": "Development environment software",
+          "examples": [
+            "Apache Kafka",
+            "Go",
+            "Microsoft Azure software",
+            "Ruby"
+          ]
+        },
+        {
+          "category": "Enterprise application integration software",
+          "examples": [
+            "Jenkins CI"
+          ]
+        },
+        {
+          "category": "Enterprise resource planning ERP software",
+          "examples": [
+            "Management information systems MIS"
+          ]
+        },
+        {
+          "category": "Enterprise system management software",
+          "examples": [
+            "Splunk Enterprise"
+          ]
+        },
+        {
+          "category": "File versioning software",
+          "examples": [
+            "Git"
+          ]
+        },
+        {
+          "category": "Geographic information system",
+          "examples": [
+            "Geographic information system GIS systems"
+          ]
+        },
+        {
+          "category": "Industrial control software",
+          "examples": [
+            "Apache MXNet"
+          ]
+        },
+        {
+          "category": "Object or component oriented development software",
+          "examples": [
+            "C#",
+            "Oracle Java",
+            "Perl",
+            "Scala"
+          ]
+        },
+        {
+          "category": "Object oriented data base management software",
+          "examples": [
+            "PostgreSQL"
+          ]
+        },
+        {
+          "category": "Office suite software",
+          "examples": [
+            "Microsoft Office software"
+          ]
+        },
+        {
+          "category": "Operating system software",
+          "examples": [
+            "Bash",
+            "Linux",
+            "Shell script",
+            "UNIX"
+          ]
+        },
+        {
+          "category": "Presentation software",
+          "examples": [
+            "Microsoft PowerPoint"
+          ]
+        },
+        {
+          "category": "Procedure management software",
+          "examples": [
+            "Apache Airflow"
+          ]
+        },
+        {
+          "category": "Project management software",
+          "examples": [
+            "Atlassian Confluence"
+          ]
+        },
+        {
+          "category": "Spreadsheet software",
+          "examples": [
+            "Microsoft Excel"
+          ]
+        },
+        {
+          "category": "Storage networking software",
+          "examples": [
+            "Amazon Simple Storage Service S3"
+          ]
+        },
+        {
+          "category": "Web platform development software",
+          "examples": [
+            "JavaScript",
+            "JavaScript Object Notation JSON",
+            "RESTful API"
+          ]
+        }
+      ]
+    },
+    {
+      "role_name": "Software Developer",
+      "onet_soc_code": "15-1252.00",
+      "source": "O*NET OnLine (onetonline.org)",
+      "tasks": [
+        {
+          "task": "Monitor functioning of equipment to ensure system operates in conformance with specifications.",
+          "importance": 78,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.",
+          "importance": 77,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop or direct software system testing or validation procedures, programming, or documentation.",
+          "importance": 73,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Confer with systems analysts, engineers, programmers and others to design systems and to obtain information on project limitations and capabilities, performance requirements and interfaces.",
+          "importance": 69,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Modify existing software to correct errors, adapt it to new hardware, or upgrade interfaces and improve performance.",
+          "importance": 69,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Coordinate installation of software system.",
+          "importance": 69,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Prepare reports or correspondence concerning project specifications, activities, or status.",
+          "importance": 67,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Analyze information to determine, recommend, and plan installation of a new system or modification of an existing system.",
+          "importance": 65,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Store, retrieve, and manipulate data for analysis of system capabilities and requirements.",
+          "importance": 65,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Design, develop and modify software systems, using scientific analysis and mathematical models to predict and measure outcomes and consequences of design.",
+          "importance": 64,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Determine system performance standards.",
+          "importance": 63,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Supervise the work of programmers, technologists and technicians and other engineering and scientific personnel.",
+          "importance": 63,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Consult with customers or other departments on project status, proposals, or technical issues, such as software system design or maintenance.",
+          "importance": 59,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Confer with data processing or project managers to obtain information on limitations or capabilities for data processing projects.",
+          "importance": 58,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Supervise and assign work to programmers, designers, technologists, technicians, or other engineering or scientific personnel.",
+          "importance": 53,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Obtain and evaluate information on factors such as reporting formats required, costs, or security needs to determine hardware configuration.",
+          "importance": 52,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Train users to use new or modified equipment.",
+          "importance": 48,
+          "category": "Supplemental",
+          "ai_classification": null
+        }
+      ],
+      "essential_skills": [
+        {
+          "skill": "Critical Thinking",
+          "description": "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems.",
+          "importance": 72
+        },
+        {
+          "skill": "Active Learning",
+          "description": "Understanding the implications of new information for both current and future problem-solving and decision-making.",
+          "importance": 63
+        },
+        {
+          "skill": "Reading Comprehension",
+          "description": "Understanding written sentences and paragraphs in work-related documents.",
+          "importance": 63
+        },
+        {
+          "skill": "Active Listening",
+          "description": "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",
+          "importance": 60
+        },
+        {
+          "skill": "Writing",
+          "description": "Communicating effectively in writing as appropriate for the needs of the audience.",
+          "importance": 56
+        },
+        {
+          "skill": "Speaking",
+          "description": "Talking to others to convey information effectively.",
+          "importance": 53
+        },
+        {
+          "skill": "Monitoring",
+          "description": "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",
+          "importance": 50
+        },
+        {
+          "skill": "Mathematics",
+          "description": "Using mathematics to solve problems.",
+          "importance": 44
+        },
+        {
+          "skill": "Learning Strategies",
+          "description": "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.",
+          "importance": 41
+        },
+        {
+          "skill": "Science",
+          "description": "Using scientific rules and methods to solve problems.",
+          "importance": 28
+        }
+      ],
+      "transferable_skills": [
+        {
+          "skill": "Programming",
+          "description": "Writing computer programs for various purposes.",
+          "importance": 75
+        },
+        {
+          "skill": "Judgment and Decision Making",
+          "description": "Considering the relative costs and benefits of potential actions to choose the most appropriate one.",
+          "importance": 66
+        },
+        {
+          "skill": "Systems Analysis",
+          "description": "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",
+          "importance": 63
+        },
+        {
+          "skill": "Complex Problem Solving",
+          "description": "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.",
+          "importance": 60
+        },
+        {
+          "skill": "Systems Evaluation",
+          "description": "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",
+          "importance": 60
+        },
+        {
+          "skill": "Technology Design",
+          "description": "Generating or adapting equipment and technology to serve user needs.",
+          "importance": 60
+        },
+        {
+          "skill": "Operations Analysis",
+          "description": "Analyzing needs and product requirements to create a design.",
+          "importance": 56
+        },
+        {
+          "skill": "Time Management",
+          "description": "Managing one's own time and the time of others.",
+          "importance": 53
+        },
+        {
+          "skill": "Coordination",
+          "description": "Adjusting actions in relation to others' actions.",
+          "importance": 50
+        },
+        {
+          "skill": "Instructing",
+          "description": "Teaching others how to do something.",
+          "importance": 47
+        },
+        {
+          "skill": "Service Orientation",
+          "description": "Actively looking for ways to help people.",
+          "importance": 47
+        },
+        {
+          "skill": "Social Perceptiveness",
+          "description": "Being aware of others' reactions and understanding why they react as they do.",
+          "importance": 47
+        },
+        {
+          "skill": "Operations Monitoring",
+          "description": "Watching gauges, dials, or other indicators to make sure a machine is working properly.",
+          "importance": 44
+        },
+        {
+          "skill": "Persuasion",
+          "description": "Persuading others to change their minds or behavior.",
+          "importance": 44
+        },
+        {
+          "skill": "Quality Control Analysis",
+          "description": "Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",
+          "importance": 44
+        },
+        {
+          "skill": "Negotiation",
+          "description": "Bringing others together and trying to reconcile differences.",
+          "importance": 41
+        },
+        {
+          "skill": "Troubleshooting",
+          "description": "Determining causes of operating errors and deciding what to do about it.",
+          "importance": 41
+        },
+        {
+          "skill": "Management of Personnel Resources",
+          "description": "Motivating, developing, and directing people as they work, identifying the best people for the job.",
+          "importance": 31
+        },
+        {
+          "skill": "Equipment Selection",
+          "description": "Determining the kind of tools and equipment needed to do a job.",
+          "importance": 28
+        },
+        {
+          "skill": "Operation and Control",
+          "description": "Controlling operations of equipment or systems.",
+          "importance": 25
+        },
+        {
+          "skill": "Installation",
+          "description": "Installing equipment, machines, wiring, or programs to meet specifications.",
+          "importance": 22
+        },
+        {
+          "skill": "Management of Financial Resources",
+          "description": "Determining how money will be spent to get the work done, and accounting for these expenditures.",
+          "importance": 19
+        },
+        {
+          "skill": "Management of Material Resources",
+          "description": "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",
+          "importance": 16
+        },
+        {
+          "skill": "Equipment Maintenance",
+          "description": "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.",
+          "importance": 6
+        },
+        {
+          "skill": "Repairing",
+          "description": "Repairing machines or systems using the needed tools.",
+          "importance": 3
+        }
+      ],
+      "knowledge": [
+        {
+          "area": "Computers and Electronics",
+          "description": "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
+          "importance": 94
+        },
+        {
+          "area": "Customer and Personal Service",
+          "description": "Knowledge of principles and processes for providing customer and personal services. This includes customer needs assessment, meeting quality standards for services, and evaluation of customer satisfaction.",
+          "importance": 64
+        },
+        {
+          "area": "Mathematics",
+          "description": "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
+          "importance": 64
+        },
+        {
+          "area": "English Language",
+          "description": "Knowledge of the structure and content of the English language including the meaning and spelling of words, and rules of composition and grammar.",
+          "importance": 57
+        },
+        {
+          "area": "Education and Training",
+          "description": "Knowledge of principles and methods for curriculum and training design, teaching and instruction for individuals and groups, and the measurement of training effects.",
+          "importance": 46
+        },
+        {
+          "area": "Engineering and Technology",
+          "description": "Knowledge of the practical application of engineering science and technology. This includes applying principles, techniques, procedures, and equipment to the design and production of various goods and services.",
+          "importance": 45
+        },
+        {
+          "area": "Design",
+          "description": "Knowledge of design techniques, tools, and principles involved in production of precision technical plans, blueprints, drawings, and models.",
+          "importance": 43
+        },
+        {
+          "area": "Telecommunications",
+          "description": "Knowledge of transmission, broadcasting, switching, control, and operation of telecommunications systems.",
+          "importance": 41
+        },
+        {
+          "area": "Production and Processing",
+          "description": "Knowledge of raw materials, production processes, quality control, costs, and other techniques for maximizing the effective manufacture and distribution of goods.",
+          "importance": 39
+        },
+        {
+          "area": "Public Safety and Security",
+          "description": "Knowledge of relevant equipment, policies, procedures, and strategies to promote effective local, state, or national security operations for the protection of people, data, property, and institutions.",
+          "importance": 39
+        },
+        {
+          "area": "Economics and Accounting",
+          "description": "Knowledge of economic and accounting principles and practices, the financial markets, banking, and the analysis and reporting of financial data.",
+          "importance": 37
+        },
+        {
+          "area": "Personnel and Human Resources",
+          "description": "Knowledge of principles and procedures for personnel recruitment, selection, training, compensation and benefits, labor relations and negotiation, and personnel information systems.",
+          "importance": 34
+        },
+        {
+          "area": "Administration and Management",
+          "description": "Knowledge of business and management principles involved in strategic planning, resource allocation, human resources modeling, leadership technique, production methods, and coordination of people and resources.",
+          "importance": 31
+        },
+        {
+          "area": "Sales and Marketing",
+          "description": "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
+          "importance": 30
+        },
+        {
+          "area": "Administrative",
+          "description": "Knowledge of administrative and office procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and workplace terminology.",
+          "importance": 28
+        },
+        {
+          "area": "Communications and Media",
+          "description": "Knowledge of media production, communication, and dissemination techniques and methods. This includes alternative ways to inform and entertain via written, oral, and visual media.",
+          "importance": 19
+        },
+        {
+          "area": "Law and Government",
+          "description": "Knowledge of laws, legal codes, court procedures, precedents, government regulations, executive orders, agency rules, and the democratic political process.",
+          "importance": 19
+        },
+        {
+          "area": "Transportation",
+          "description": "Knowledge of principles and methods for moving people or goods by air, rail, sea, or road, including the relative costs and benefits.",
+          "importance": 18
+        },
+        {
+          "area": "Psychology",
+          "description": "Knowledge of human behavior and performance; individual differences in ability, personality, and interests; learning and motivation; psychological research methods; and the assessment and treatment of behavioral and affective disorders.",
+          "importance": 15
+        },
+        {
+          "area": "Mechanical",
+          "description": "Knowledge of machines and tools, including their designs, uses, repair, and maintenance.",
+          "importance": 10
+        },
+        {
+          "area": "Sociology and Anthropology",
+          "description": "Knowledge of group behavior and dynamics, societal trends and influences, human migrations, ethnicity, cultures, and their history and origins.",
+          "importance": 8
+        },
+        {
+          "area": "Geography",
+          "description": "Knowledge of principles and methods for describing the features of land, sea, and air masses, including their physical characteristics, locations, interrelationships, and distribution of plant, animal, and human life.",
+          "importance": 7
+        },
+        {
+          "area": "Physics",
+          "description": "Knowledge and prediction of physical principles, laws, their interrelationships, and applications to understanding fluid, material, and atmospheric dynamics, and mechanical, electrical, atomic and sub-atomic structures and processes.",
+          "importance": 7
+        },
+        {
+          "area": "Chemistry",
+          "description": "Knowledge of the chemical composition, structure, and properties of substances and of the chemical processes and transformations that they undergo. This includes uses of chemicals and their interactions, danger signs, production techniques, and disposal methods.",
+          "importance": 6
+        },
+        {
+          "area": "Biology",
+          "description": "Knowledge of plant and animal organisms, their tissues, cells, functions, interdependencies, and interactions with each other and the environment.",
+          "importance": 4
+        },
+        {
+          "area": "Foreign Language",
+          "description": "Knowledge of the structure and content of a foreign (non-English) language including the meaning and spelling of words, rules of composition and grammar, and pronunciation.",
+          "importance": 4
+        },
+        {
+          "area": "Philosophy and Theology",
+          "description": "Knowledge of different philosophical systems and religions. This includes their basic principles, values, ethics, ways of thinking, customs, practices, and their impact on human culture.",
+          "importance": 4
+        },
+        {
+          "area": "Building and Construction",
+          "description": "Knowledge of materials, methods, and the tools involved in the construction or repair of houses, buildings, or other structures such as highways and roads.",
+          "importance": 3
+        },
+        {
+          "area": "Food Production",
+          "description": "Knowledge of techniques and equipment for planting, growing, and harvesting food products (both plant and animal) for consumption, including storage/handling techniques.",
+          "importance": 3
+        },
+        {
+          "area": "History and Archeology",
+          "description": "Knowledge of historical events and their causes, indicators, and effects on civilizations and cultures.",
+          "importance": 1
+        },
+        {
+          "area": "Therapy and Counseling",
+          "description": "Knowledge of principles, methods, and procedures for diagnosis, treatment, and rehabilitation of physical and mental dysfunctions, and for career counseling and guidance.",
+          "importance": 1
+        },
+        {
+          "area": "Fine Arts",
+          "description": "Knowledge of the theory and techniques required to compose, produce, and perform works of music, dance, visual arts, drama, and sculpture.",
+          "importance": 0
+        },
+        {
+          "area": "Medicine and Dentistry",
+          "description": "Knowledge of the information and techniques needed to diagnose and treat human injuries, diseases, and deformities. This includes symptoms, treatment alternatives, drug properties and interactions, and preventive health-care measures.",
+          "importance": 0
+        }
+      ],
+      "software_skills": [
+        {
+          "category": "Access software",
+          "examples": [
+            "Citrix cloud computing software",
+            "PuTTY"
+          ]
+        },
+        {
+          "category": "Administration software",
+          "examples": [
+            "Software distribution management software"
+          ]
+        },
+        {
+          "category": "Analytical or scientific software",
+          "examples": [
+            "IBM SPSS Statistics",
+            "SAS",
+            "TensorFlow",
+            "The MathWorks MATLAB"
+          ]
+        },
+        {
+          "category": "Application server software",
+          "examples": [
+            "Atlassian Bitbucket",
+            "GitLab",
+            "Red Hat OpenShift",
+            "Spring Boot"
+          ]
+        },
+        {
+          "category": "Authentication server software",
+          "examples": [
+            "Single sign-on SSO"
+          ]
+        },
+        {
+          "category": "Backup or archival software",
+          "examples": [
+            "Backup and archival software",
+            "Veritas NetBackup"
+          ]
+        },
+        {
+          "category": "Business intelligence and data analysis software",
+          "examples": [
+            "Alteryx software",
+            "Google Looker Analytics",
+            "Microsoft Power BI",
+            "Tableau"
+          ]
+        },
+        {
+          "category": "Cloud-based data access and sharing software",
+          "examples": [
+            "Dropbox",
+            "Google Drive",
+            "Platform as a service PaaS",
+            "Slack"
+          ]
+        },
+        {
+          "category": "Cloud-based management software",
+          "examples": [
+            "Amazon Web Services AWS CloudFormation",
+            "IBM WebSphere MQ",
+            "Oracle Cloud software",
+            "Splunk Enterprise"
+          ]
+        },
+        {
+          "category": "Clustering software",
+          "examples": [
+            "VMware"
+          ]
+        },
+        {
+          "category": "Communications server software",
+          "examples": [
+            "IBM Domino"
+          ]
+        },
+        {
+          "category": "Computer based training software",
+          "examples": [
+            "Moodle"
+          ]
+        },
+        {
+          "category": "Configuration management software",
+          "examples": [
+            "Chef",
+            "IBM Terraform",
+            "Perforce Helix software",
+            "Puppet"
+          ]
+        },
+        {
+          "category": "Content workflow software",
+          "examples": [
+            "Atlassian JIRA",
+            "Emerald Software Group Emerald Green Office"
+          ]
+        },
+        {
+          "category": "Customer relationship management CRM software",
+          "examples": [
+            "Blackbaud The Raiser's Edge",
+            "Oracle Eloqua",
+            "Salesforce software"
+          ]
+        },
+        {
+          "category": "Data base management system software",
+          "examples": [
+            "Amazon DynamoDB",
+            "Oracle Database",
+            "Oracle PL/SQL",
+            "Redis"
+          ]
+        },
+        {
+          "category": "Data base reporting software",
+          "examples": [
+            "Microsoft SQL Server Reporting Services SSRS",
+            "Oracle Business Intelligence Discoverer",
+            "SAP Business Intelligence",
+            "SAP Crystal Reports"
+          ]
+        },
+        {
+          "category": "Data base user interface and query software",
+          "examples": [
+            "Airtable",
+            "Blackboard software",
+            "GraphQL",
+            "Prometheus"
+          ]
+        },
+        {
+          "category": "Data mining software",
+          "examples": [
+            "Google Analytics",
+            "Snowflake"
+          ]
+        },
+        {
+          "category": "Desktop communications software",
+          "examples": [
+            "Skype"
+          ]
+        },
+        {
+          "category": "Desktop publishing software",
+          "examples": [
+            "Adobe InDesign",
+            "Microsoft Publisher"
+          ]
+        },
+        {
+          "category": "Development environment software",
+          "examples": [
+            "Apache Kafka",
+            "Apache Maven",
+            "Oracle Java 2 Platform Enterprise Edition J2EE",
+            "Oracle SQL Developer"
+          ]
+        },
+        {
+          "category": "Device drivers or system software",
+          "examples": [
+            "Microsoft DirectX"
+          ]
+        },
+        {
+          "category": "Document management software",
+          "examples": [
+            "Adobe Acrobat",
+            "Document management system software",
+            "Microsoft SharePoint"
+          ]
+        },
+        {
+          "category": "Electronic mail software",
+          "examples": [
+            "Google Gmail",
+            "IBM Notes",
+            "Microsoft Exchange",
+            "Microsoft Outlook"
+          ]
+        },
+        {
+          "category": "Enterprise application integration software",
+          "examples": [
+            "Jenkins CI",
+            "Microsoft Power Automate",
+            "Microsoft Power Platform software",
+            "Microsoft SQL Server Integration Services SSIS"
+          ]
+        },
+        {
+          "category": "Enterprise resource planning ERP software",
+          "examples": [
+            "Oracle PeopleSoft",
+            "SAP ERP",
+            "SAP software",
+            "Workday software"
+          ]
+        },
+        {
+          "category": "Enterprise system management software",
+          "examples": [
+            "IBM Power Systems software"
+          ]
+        },
+        {
+          "category": "Expert system software",
+          "examples": [
+            "Ansible software"
+          ]
+        },
+        {
+          "category": "File versioning software",
+          "examples": [
+            "Apache Subversion SVN",
+            "Git",
+            "Version control software"
+          ]
+        },
+        {
+          "category": "Filesystem software",
+          "examples": [
+            "File server software"
+          ]
+        },
+        {
+          "category": "Financial analysis software",
+          "examples": [
+            "Delphi Technology",
+            "Oracle E-Business Suite Financials"
+          ]
+        },
+        {
+          "category": "Graphical user interface development software",
+          "examples": [
+            "Figma",
+            "Grafana Labs Grafana Cloud",
+            "Graphical user interface GUI builder software",
+            "Salesforce Visualforce"
+          ]
+        },
+        {
+          "category": "Graphics or photo imaging software",
+          "examples": [
+            "Adobe Creative Cloud software",
+            "Adobe Illustrator",
+            "JamBoard",
+            "Trimble SketchUp Pro"
+          ]
+        },
+        {
+          "category": "Information retrieval or search software",
+          "examples": [
+            "Apache Avro",
+            "LexisNexis"
+          ]
+        },
+        {
+          "category": "Instant messaging software",
+          "examples": [
+            "Blink",
+            "GroupMe"
+          ]
+        },
+        {
+          "category": "Internet directory services software",
+          "examples": [
+            "Microsoft Active Directory"
+          ]
+        },
+        {
+          "category": "Internet protocol IP multimedia subsystem software",
+          "examples": [
+            "Voice over internet protocol VoIP system software"
+          ]
+        },
+        {
+          "category": "Map creation software",
+          "examples": [
+            "ESRI ArcGIS software"
+          ]
+        },
+        {
+          "category": "Metadata management software",
+          "examples": [
+            "Informatica software",
+            "Quest Erwin Data Modeler",
+            "Talend Data Fabric"
+          ]
+        },
+        {
+          "category": "Network conferencing software",
+          "examples": [
+            "LogMeIn GoToWebinar"
+          ]
+        },
+        {
+          "category": "Network monitoring software",
+          "examples": [
+            "Nagios",
+            "Wireshark"
+          ]
+        },
+        {
+          "category": "Network operation system software",
+          "examples": [
+            "IBM z/OS operating systems"
+          ]
+        },
+        {
+          "category": "Network security and virtual private network VPN equipment software",
+          "examples": [
+            "Firewall software",
+            "Virtual private networking VPN software"
+          ]
+        },
+        {
+          "category": "Object or component oriented development software",
+          "examples": [
+            "Apache Spark",
+            "jQuery",
+            "Scala",
+            "TypeScript"
+          ]
+        },
+        {
+          "category": "Object oriented data base management software",
+          "examples": [
+            "Hibernate ORM",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "category": "Office suite software",
+          "examples": [
+            "LibreOffice",
+            "Microsoft Office software"
+          ]
+        },
+        {
+          "category": "Operating system software",
+          "examples": [
+            "Apple iOS",
+            "Google Android",
+            "Microsoft Windows Server",
+            "UNIX Shell"
+          ]
+        },
+        {
+          "category": "Platform interconnectivity software",
+          "examples": [
+            "Migration software"
+          ]
+        },
+        {
+          "category": "Portal server software",
+          "examples": [
+            "Apache HTTP Server"
+          ]
+        },
+        {
+          "category": "Presentation software",
+          "examples": [
+            "Google Slides",
+            "Microsoft PowerPoint"
+          ]
+        },
+        {
+          "category": "Procedure management software",
+          "examples": [
+            "Apache Airflow"
+          ]
+        },
+        {
+          "category": "Process mapping and design software",
+          "examples": [
+            "Microsoft Visio"
+          ]
+        },
+        {
+          "category": "Program testing software",
+          "examples": [
+            "Hewlett Packard LoadRunner",
+            "JUnit",
+            "Selenium",
+            "SonarQube"
+          ]
+        },
+        {
+          "category": "Project management software",
+          "examples": [
+            "Atlassian Confluence",
+            "Microsoft Team Foundation Server",
+            "Microsoft Teams",
+            "Oracle Primavera Enterprise Project Portfolio Management"
+          ]
+        },
+        {
+          "category": "Requirements analysis and system architecture software",
+          "examples": [
+            "IBM Rational RequisitePro",
+            "Requirements management software",
+            "Unified modeling language UML"
+          ]
+        },
+        {
+          "category": "Sales and marketing software",
+          "examples": [
+            "Marketo Marketing Automation"
+          ]
+        },
+        {
+          "category": "Spreadsheet software",
+          "examples": [
+            "Google Sheets",
+            "Microsoft Excel"
+          ]
+        },
+        {
+          "category": "Storage networking software",
+          "examples": [
+            "Amazon Simple Storage Service S3",
+            "Storage area network SAN software"
+          ]
+        },
+        {
+          "category": "Switch or router software",
+          "examples": [
+            "Border Gateway Protocol BGP"
+          ]
+        },
+        {
+          "category": "Transaction security and virus protection software",
+          "examples": [
+            "Encryption software",
+            "McAfee",
+            "NortonLifeLock cybersecurity software"
+          ]
+        },
+        {
+          "category": "Transaction server software",
+          "examples": [
+            "Customer information control system CICS",
+            "IBM Middleware",
+            "Microsoft Internet Information Services (IIS)",
+            "Object Management Group Object Request Broker"
+          ]
+        },
+        {
+          "category": "Video conferencing software",
+          "examples": [
+            "Cisco Webex",
+            "Google Meet",
+            "LogMeIn GoToMeeting",
+            "Zoom"
+          ]
+        },
+        {
+          "category": "Video creation and editing software",
+          "examples": [
+            "Adobe After Effects",
+            "Flipgrid",
+            "Screencastify",
+            "YouTube"
+          ]
+        },
+        {
+          "category": "Web page creation and editing software",
+          "examples": [
+            "Adobe Dreamweaver",
+            "Google Sites",
+            "Social media sites",
+            "WordPress"
+          ]
+        },
+        {
+          "category": "Web platform development software",
+          "examples": [
+            "Bootstrap",
+            "React",
+            "Spring Framework",
+            "Vue.js"
+          ]
+        },
+        {
+          "category": "Word processing software",
+          "examples": [
+            "3M Post-it App",
+            "Google Docs",
+            "Microsoft OneNote",
+            "Microsoft Word"
+          ]
+        }
+      ]
+    },
+    {
+      "role_name": "UI/UX Designer (Web & Digital Interface Designer)",
+      "onet_soc_code": "15-1255.00",
+      "source": "O*NET OnLine (onetonline.org)",
+      "tasks": [
+        {
+          "task": "Identify problems uncovered by testing or customer feedback, and correct problems or refer problems to appropriate personnel for correction.",
+          "importance": 83,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Design, build, or maintain Web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",
+          "importance": 78,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Write supporting code for Web applications or Web sites.",
+          "importance": 78,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Perform Web site tests according to planned schedules, or after any Web site or product revision.",
+          "importance": 77,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Collaborate with web development professionals, such as front-end or back-end developers, to complete the full scope of Web development projects.",
+          "importance": 76,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Collaborate with management or users to develop e-commerce strategies and to integrate these strategies with Web sites.",
+          "importance": 76,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop new visual design concepts and modify concepts based on stakeholder feedback.",
+          "importance": 75,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Maintain understanding of current Web technologies or programming practices through continuing education, reading, or participation in professional conferences, workshops, or groups.",
+          "importance": 74,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Respond to user email inquiries, or set up automated systems to send responses.",
+          "importance": 73,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Create Web models or prototypes that include physical, interface, logical, or data models.",
+          "importance": 72,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Conduct user research to determine design requirements and analyze user feedback to improve design quality.",
+          "importance": 70,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Perform or direct Web site updates.",
+          "importance": 70,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Identify or maintain links to and from other Web sites and check links to ensure proper functioning.",
+          "importance": 67,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Direct and execute pre-production activities, such as creating moodboards or storyboards and establishing a project timeline.",
+          "importance": 66,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Communicate with network personnel or Web site hosting agencies to address hardware or software issues affecting Web sites.",
+          "importance": 64,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Research and apply innovative solutions for product design, visuals, and user experience to meet the needs of individual Web development projects.",
+          "importance": 64,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop and document style guidelines for Web site content.",
+          "importance": 64,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Select programming languages, design tools, or applications.",
+          "importance": 63,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or choose solutions.",
+          "importance": 62,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Write and edit technical documentation for digital interface products and designs, such as user manuals, testing protocols, and reports.",
+          "importance": 62,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop, validate, and document test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types.",
+          "importance": 61,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Provide clear, detailed descriptions of Web site specifications, such as product features, activities, software, communication protocols, programming languages, and operating systems software and hardware.",
+          "importance": 59,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop Web site maps, application models, image templates, or page templates that meet project goals, user needs, or industry standards.",
+          "importance": 55,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Incorporate technical considerations into Web site design plans, such as budgets, equipment, performance requirements, or legal issues including accessibility and privacy.",
+          "importance": 54,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Research, document, rate, or select alternatives for Web architecture or technologies.",
+          "importance": 53,
+          "category": "Core",
+          "ai_classification": null
+        },
+        {
+          "task": "Document technical factors such as server load, bandwidth, database performance, and browser and device types.",
+          "importance": 49,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop or implement procedures for ongoing Web site revision.",
+          "importance": 49,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Register Web sites with search engines to increase Web site traffic.",
+          "importance": 44,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Create searchable indices for Web page content.",
+          "importance": 44,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Develop system interaction or sequence diagrams.",
+          "importance": 38,
+          "category": "Supplemental",
+          "ai_classification": null
+        },
+        {
+          "task": "Optimize webpages for search engine rankings.",
+          "importance": null,
+          "category": "New",
+          "ai_classification": null
+        }
+      ],
+      "essential_skills": [
+        {
+          "skill": "Reading Comprehension",
+          "description": "Understanding written sentences and paragraphs in work-related documents.",
+          "importance": 69
+        },
+        {
+          "skill": "Critical Thinking",
+          "description": "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems.",
+          "importance": 63
+        },
+        {
+          "skill": "Active Learning",
+          "description": "Understanding the implications of new information for both current and future problem-solving and decision-making.",
+          "importance": 60
+        },
+        {
+          "skill": "Active Listening",
+          "description": "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",
+          "importance": 60
+        },
+        {
+          "skill": "Monitoring",
+          "description": "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",
+          "importance": 53
+        },
+        {
+          "skill": "Speaking",
+          "description": "Talking to others to convey information effectively.",
+          "importance": 53
+        },
+        {
+          "skill": "Writing",
+          "description": "Communicating effectively in writing as appropriate for the needs of the audience.",
+          "importance": 53
+        },
+        {
+          "skill": "Learning Strategies",
+          "description": "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.",
+          "importance": 41
+        },
+        {
+          "skill": "Mathematics",
+          "description": "Using mathematics to solve problems.",
+          "importance": 35
+        },
+        {
+          "skill": "Science",
+          "description": "Using scientific rules and methods to solve problems.",
+          "importance": 22
+        }
+      ],
+      "transferable_skills": [
+        {
+          "skill": "Judgment and Decision Making",
+          "description": "Considering the relative costs and benefits of potential actions to choose the most appropriate one.",
+          "importance": 63
+        },
+        {
+          "skill": "Complex Problem Solving",
+          "description": "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.",
+          "importance": 60
+        },
+        {
+          "skill": "Programming",
+          "description": "Writing computer programs for various purposes.",
+          "importance": 56
+        },
+        {
+          "skill": "Operations Analysis",
+          "description": "Analyzing needs and product requirements to create a design.",
+          "importance": 50
+        },
+        {
+          "skill": "Time Management",
+          "description": "Managing one's own time and the time of others.",
+          "importance": 50
+        },
+        {
+          "skill": "Coordination",
+          "description": "Adjusting actions in relation to others' actions.",
+          "importance": 47
+        },
+        {
+          "skill": "Service Orientation",
+          "description": "Actively looking for ways to help people.",
+          "importance": 47
+        },
+        {
+          "skill": "Systems Evaluation",
+          "description": "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",
+          "importance": 47
+        },
+        {
+          "skill": "Persuasion",
+          "description": "Persuading others to change their minds or behavior.",
+          "importance": 44
+        },
+        {
+          "skill": "Social Perceptiveness",
+          "description": "Being aware of others' reactions and understanding why they react as they do.",
+          "importance": 44
+        },
+        {
+          "skill": "Systems Analysis",
+          "description": "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",
+          "importance": 44
+        },
+        {
+          "skill": "Instructing",
+          "description": "Teaching others how to do something.",
+          "importance": 41
+        },
+        {
+          "skill": "Quality Control Analysis",
+          "description": "Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",
+          "importance": 41
+        },
+        {
+          "skill": "Technology Design",
+          "description": "Generating or adapting equipment and technology to serve user needs.",
+          "importance": 41
+        },
+        {
+          "skill": "Negotiation",
+          "description": "Bringing others together and trying to reconcile differences.",
+          "importance": 38
+        },
+        {
+          "skill": "Operations Monitoring",
+          "description": "Watching gauges, dials, or other indicators to make sure a machine is working properly.",
+          "importance": 38
+        },
+        {
+          "skill": "Troubleshooting",
+          "description": "Determining causes of operating errors and deciding what to do about it.",
+          "importance": 35
+        },
+        {
+          "skill": "Management of Personnel Resources",
+          "description": "Motivating, developing, and directing people as they work, identifying the best people for the job.",
+          "importance": 31
+        },
+        {
+          "skill": "Management of Financial Resources",
+          "description": "Determining how money will be spent to get the work done, and accounting for these expenditures.",
+          "importance": 28
+        },
+        {
+          "skill": "Management of Material Resources",
+          "description": "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",
+          "importance": 28
+        },
+        {
+          "skill": "Repairing",
+          "description": "Repairing machines or systems using the needed tools.",
+          "importance": 10
+        },
+        {
+          "skill": "Equipment Maintenance",
+          "description": "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.",
+          "importance": 6
+        },
+        {
+          "skill": "Equipment Selection",
+          "description": "Determining the kind of tools and equipment needed to do a job.",
+          "importance": 6
+        },
+        {
+          "skill": "Operation and Control",
+          "description": "Controlling operations of equipment or systems.",
+          "importance": 6
+        },
+        {
+          "skill": "Installation",
+          "description": "Installing equipment, machines, wiring, or programs to meet specifications.",
+          "importance": 0
+        }
+      ],
+      "knowledge": [
+        {
+          "area": "Computers and Electronics",
+          "description": "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
+          "importance": 74
+        },
+        {
+          "area": "English Language",
+          "description": "Knowledge of the structure and content of the English language including the meaning and spelling of words, and rules of composition and grammar.",
+          "importance": 71
+        },
+        {
+          "area": "Customer and Personal Service",
+          "description": "Knowledge of principles and processes for providing customer and personal services. This includes customer needs assessment, meeting quality standards for services, and evaluation of customer satisfaction.",
+          "importance": 64
+        },
+        {
+          "area": "Administration and Management",
+          "description": "Knowledge of business and management principles involved in strategic planning, resource allocation, human resources modeling, leadership technique, production methods, and coordination of people and resources.",
+          "importance": 53
+        },
+        {
+          "area": "Sales and Marketing",
+          "description": "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
+          "importance": 47
+        },
+        {
+          "area": "Design",
+          "description": "Knowledge of design techniques, tools, and principles involved in production of precision technical plans, blueprints, drawings, and models.",
+          "importance": 45
+        },
+        {
+          "area": "Administrative",
+          "description": "Knowledge of administrative and office procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and workplace terminology.",
+          "importance": 35
+        },
+        {
+          "area": "Mathematics",
+          "description": "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
+          "importance": 35
+        },
+        {
+          "area": "Production and Processing",
+          "description": "Knowledge of raw materials, production processes, quality control, costs, and other techniques for maximizing the effective manufacture and distribution of goods.",
+          "importance": 35
+        },
+        {
+          "area": "Communications and Media",
+          "description": "Knowledge of media production, communication, and dissemination techniques and methods. This includes alternative ways to inform and entertain via written, oral, and visual media.",
+          "importance": 34
+        },
+        {
+          "area": "Economics and Accounting",
+          "description": "Knowledge of economic and accounting principles and practices, the financial markets, banking, and the analysis and reporting of financial data.",
+          "importance": 32
+        },
+        {
+          "area": "Personnel and Human Resources",
+          "description": "Knowledge of principles and procedures for personnel recruitment, selection, training, compensation and benefits, labor relations and negotiation, and personnel information systems.",
+          "importance": 32
+        },
+        {
+          "area": "Telecommunications",
+          "description": "Knowledge of transmission, broadcasting, switching, control, and operation of telecommunications systems.",
+          "importance": 29
+        },
+        {
+          "area": "Engineering and Technology",
+          "description": "Knowledge of the practical application of engineering science and technology. This includes applying principles, techniques, procedures, and equipment to the design and production of various goods and services.",
+          "importance": 28
+        },
+        {
+          "area": "Education and Training",
+          "description": "Knowledge of principles and methods for curriculum and training design, teaching and instruction for individuals and groups, and the measurement of training effects.",
+          "importance": 26
+        },
+        {
+          "area": "Law and Government",
+          "description": "Knowledge of laws, legal codes, court procedures, precedents, government regulations, executive orders, agency rules, and the democratic political process.",
+          "importance": 23
+        },
+        {
+          "area": "Geography",
+          "description": "Knowledge of principles and methods for describing the features of land, sea, and air masses, including their physical characteristics, locations, interrelationships, and distribution of plant, animal, and human life.",
+          "importance": 14
+        },
+        {
+          "area": "Transportation",
+          "description": "Knowledge of principles and methods for moving people or goods by air, rail, sea, or road, including the relative costs and benefits.",
+          "importance": 11
+        },
+        {
+          "area": "Public Safety and Security",
+          "description": "Knowledge of relevant equipment, policies, procedures, and strategies to promote effective local, state, or national security operations for the protection of people, data, property, and institutions.",
+          "importance": 9
+        },
+        {
+          "area": "Psychology",
+          "description": "Knowledge of human behavior and performance; individual differences in ability, personality, and interests; learning and motivation; psychological research methods; and the assessment and treatment of behavioral and affective disorders.",
+          "importance": 6
+        },
+        {
+          "area": "Sociology and Anthropology",
+          "description": "Knowledge of group behavior and dynamics, societal trends and influences, human migrations, ethnicity, cultures, and their history and origins.",
+          "importance": 6
+        },
+        {
+          "area": "Fine Arts",
+          "description": "Knowledge of the theory and techniques required to compose, produce, and perform works of music, dance, visual arts, drama, and sculpture.",
+          "importance": 4
+        },
+        {
+          "area": "Foreign Language",
+          "description": "Knowledge of the structure and content of a foreign (non-English) language including the meaning and spelling of words, rules of composition and grammar, and pronunciation.",
+          "importance": 1
+        },
+        {
+          "area": "History and Archeology",
+          "description": "Knowledge of historical events and their causes, indicators, and effects on civilizations and cultures.",
+          "importance": 1
+        },
+        {
+          "area": "Philosophy and Theology",
+          "description": "Knowledge of different philosophical systems and religions. This includes their basic principles, values, ethics, ways of thinking, customs, practices, and their impact on human culture.",
+          "importance": 1
+        },
+        {
+          "area": "Biology",
+          "description": "Knowledge of plant and animal organisms, their tissues, cells, functions, interdependencies, and interactions with each other and the environment.",
+          "importance": 0
+        },
+        {
+          "area": "Building and Construction",
+          "description": "Knowledge of materials, methods, and the tools involved in the construction or repair of houses, buildings, or other structures such as highways and roads.",
+          "importance": 0
+        },
+        {
+          "area": "Chemistry",
+          "description": "Knowledge of the chemical composition, structure, and properties of substances and of the chemical processes and transformations that they undergo. This includes uses of chemicals and their interactions, danger signs, production techniques, and disposal methods.",
+          "importance": 0
+        },
+        {
+          "area": "Food Production",
+          "description": "Knowledge of techniques and equipment for planting, growing, and harvesting food products (both plant and animal) for consumption, including storage/handling techniques.",
+          "importance": 0
+        },
+        {
+          "area": "Mechanical",
+          "description": "Knowledge of machines and tools, including their designs, uses, repair, and maintenance.",
+          "importance": 0
+        },
+        {
+          "area": "Medicine and Dentistry",
+          "description": "Knowledge of the information and techniques needed to diagnose and treat human injuries, diseases, and deformities. This includes symptoms, treatment alternatives, drug properties and interactions, and preventive health-care measures.",
+          "importance": 0
+        },
+        {
+          "area": "Physics",
+          "description": "Knowledge and prediction of physical principles, laws, their interrelationships, and applications to understanding fluid, material, and atmospheric dynamics, and mechanical, electrical, atomic and sub-atomic structures and processes.",
+          "importance": 0
+        },
+        {
+          "area": "Therapy and Counseling",
+          "description": "Knowledge of principles, methods, and procedures for diagnosis, treatment, and rehabilitation of physical and mental dysfunctions, and for career counseling and guidance.",
+          "importance": 0
+        }
+      ],
+      "software_skills": [
+        {
+          "category": "Analytical or scientific software",
+          "examples": [
+            "IBM SPSS Statistics",
+            "SAS",
+            "The MathWorks MATLAB"
+          ]
+        },
+        {
+          "category": "Application server software",
+          "examples": [
+            "Docker",
+            "GitHub",
+            "Red Hat OpenShift",
+            "Spring Boot"
+          ]
+        },
+        {
+          "category": "Business intelligence and data analysis software",
+          "examples": [
+            "IBM Cognos Impromptu",
+            "Oracle Business Intelligence Enterprise Edition",
+            "Qlik Tech QlikView",
+            "Tableau"
+          ]
+        },
+        {
+          "category": "Cloud-based data access and sharing software",
+          "examples": [
+            "Dropbox",
+            "Google Drive",
+            "Slack"
+          ]
+        },
+        {
+          "category": "Cloud-based management software",
+          "examples": [
+            "Amazon Web Services AWS CloudFormation",
+            "IBM WebSphere",
+            "Splunk Enterprise"
+          ]
+        },
+        {
+          "category": "Communications server software",
+          "examples": [
+            "IBM Domino"
+          ]
+        },
+        {
+          "category": "Computer based training software",
+          "examples": [
+            "Moodle"
+          ]
+        },
+        {
+          "category": "Configuration management software",
+          "examples": [
+            "Chef",
+            "Perforce Helix software",
+            "Puppet"
+          ]
+        },
+        {
+          "category": "Content workflow software",
+          "examples": [
+            "Atlassian JIRA",
+            "Sitecore CMS"
+          ]
+        },
+        {
+          "category": "Customer relationship management CRM software",
+          "examples": [
+            "Oracle Eloqua",
+            "Salesforce software"
+          ]
+        },
+        {
+          "category": "Data base management system software",
+          "examples": [
+            "Amazon DynamoDB",
+            "Apache Hive",
+            "Elasticsearch",
+            "Oracle PL/SQL"
+          ]
+        },
+        {
+          "category": "Data base reporting software",
+          "examples": [
+            "Microsoft SQL Server Reporting Services SSRS",
+            "SAP Crystal Reports"
+          ]
+        },
+        {
+          "category": "Data base user interface and query software",
+          "examples": [
+            "Airtable",
+            "Amazon Elastic Compute Cloud EC2",
+            "Blackboard software",
+            "Transact-SQL"
+          ]
+        },
+        {
+          "category": "Data mining software",
+          "examples": [
+            "Google Analytics"
+          ]
+        },
+        {
+          "category": "Desktop communications software",
+          "examples": [
+            "Skype"
+          ]
+        },
+        {
+          "category": "Desktop publishing software",
+          "examples": [
+            "Adobe InDesign",
+            "Microsoft Publisher"
+          ]
+        },
+        {
+          "category": "Development environment software",
+          "examples": [
+            "Apache Kafka",
+            "Apache Maven",
+            "Go",
+            "Oracle Java 2 Platform Enterprise Edition J2EE"
+          ]
+        },
+        {
+          "category": "Document management software",
+          "examples": [
+            "Adobe Acrobat",
+            "Microsoft SharePoint"
+          ]
+        },
+        {
+          "category": "Electronic mail software",
+          "examples": [
+            "IBM Notes"
+          ]
+        },
+        {
+          "category": "Enterprise application integration software",
+          "examples": [
+            "Common gateway interface CGI",
+            "Extensible markup language XML",
+            "IBM InfoSphere DataStage",
+            "Microsoft SQL Server Integration Services SSIS"
+          ]
+        },
+        {
+          "category": "Enterprise resource planning ERP software",
+          "examples": [
+            "Microsoft Dynamics",
+            "Oracle Fusion Applications",
+            "Oracle PeopleSoft",
+            "SAP software"
+          ]
+        },
+        {
+          "category": "Enterprise system management software",
+          "examples": [
+            "IBM Power Systems software"
+          ]
+        },
+        {
+          "category": "Expert system software",
+          "examples": [
+            "Ansible software"
+          ]
+        },
+        {
+          "category": "File versioning software",
+          "examples": [
+            "Apache Subversion SVN",
+            "Git"
+          ]
+        },
+        {
+          "category": "Financial analysis software",
+          "examples": [
+            "Delphi Technology"
+          ]
+        },
+        {
+          "category": "Graphical user interface development software",
+          "examples": [
+            "Figma",
+            "Salesforce Visualforce"
+          ]
+        },
+        {
+          "category": "Graphics or photo imaging software",
+          "examples": [
+            "Adobe Creative Cloud software",
+            "Adobe Illustrator",
+            "JamBoard",
+            "Trimble SketchUp Pro"
+          ]
+        },
+        {
+          "category": "Industrial control software",
+          "examples": [
+            "Chatbot software"
+          ]
+        },
+        {
+          "category": "Instant messaging software",
+          "examples": [
+            "Blink"
+          ]
+        },
+        {
+          "category": "Metadata management software",
+          "examples": [
+            "Quest Erwin Data Modeler"
+          ]
+        },
+        {
+          "category": "Multi-media educational software",
+          "examples": [
+            "Nearpod"
+          ]
+        },
+        {
+          "category": "Network monitoring software",
+          "examples": [
+            "Nagios",
+            "Wireshark"
+          ]
+        },
+        {
+          "category": "Object or component oriented development software",
+          "examples": [
+            "Apache Spark",
+            "jQuery",
+            "Scala",
+            "TypeScript"
+          ]
+        },
+        {
+          "category": "Object oriented data base management software",
+          "examples": [
+            "Hibernate ORM",
+            "PostgreSQL"
+          ]
+        },
+        {
+          "category": "Office suite software",
+          "examples": [
+            "Microsoft Office software"
+          ]
+        },
+        {
+          "category": "Operating system software",
+          "examples": [
+            "Apple iOS",
+            "Google Android",
+            "Microsoft Windows Server",
+            "UNIX Shell"
+          ]
+        },
+        {
+          "category": "Portal server software",
+          "examples": [
+            "Apache HTTP Server"
+          ]
+        },
+        {
+          "category": "Presentation software",
+          "examples": [
+            "Apple Keynote",
+            "Google Slides"
+          ]
+        },
+        {
+          "category": "Process mapping and design software",
+          "examples": [
+            "InVision software",
+            "Microsoft Visio"
+          ]
+        },
+        {
+          "category": "Program testing software",
+          "examples": [
+            "Hewlett Packard LoadRunner",
+            "JUnit",
+            "Selenium",
+            "UserZoom"
+          ]
+        },
+        {
+          "category": "Project management software",
+          "examples": [
+            "Atlassian Confluence",
+            "Microsoft Project",
+            "Oracle Primavera Enterprise Project Portfolio Management"
+          ]
+        },
+        {
+          "category": "Requirements analysis and system architecture software",
+          "examples": [
+            "Unified modeling language UML"
+          ]
+        },
+        {
+          "category": "Sales and marketing software",
+          "examples": [
+            "Google Ads",
+            "HubSpot software"
+          ]
+        },
+        {
+          "category": "Spreadsheet software",
+          "examples": [
+            "Microsoft Excel"
+          ]
+        },
+        {
+          "category": "Storage networking software",
+          "examples": [
+            "Amazon Simple Storage Service S3"
+          ]
+        },
+        {
+          "category": "Transaction security and virus protection software",
+          "examples": [
+            "NortonLifeLock cybersecurity software"
+          ]
+        },
+        {
+          "category": "Transaction server software",
+          "examples": [
+            "Customer information control system CICS",
+            "Microsoft Internet Information Services (IIS)"
+          ]
+        },
+        {
+          "category": "Video conferencing software",
+          "examples": [
+            "Cisco Webex",
+            "Google Meet"
+          ]
+        },
+        {
+          "category": "Video creation and editing software",
+          "examples": [
+            "Adobe After Effects",
+            "Flipgrid",
+            "Screencastify",
+            "YouTube"
+          ]
+        },
+        {
+          "category": "Web page creation and editing software",
+          "examples": [
+            "Adobe Dreamweaver",
+            "Axure RP",
+            "Google Sites",
+            "Social media sites"
+          ]
+        },
+        {
+          "category": "Web platform development software",
+          "examples": [
+            "Bootstrap",
+            "React",
+            "Spring Framework",
+            "Vue.js"
+          ]
+        },
+        {
+          "category": "Word processing software",
+          "examples": [
+            "3M Post-it App",
+            "Evernote",
+            "Google Docs"
+          ]
+        }
+      ]
+    }
+  ]
+}
