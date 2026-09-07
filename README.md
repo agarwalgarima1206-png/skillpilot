@@ -1,97 +1,116 @@
 # SkillPilot
 
-AI-powered career and skill navigation tool. Users input a dream job and current skills, and get back a task breakdown (Human-Core / AI-Augmented / AI-Accelerated), an AI-Resilience Score, skill-gap analysis, and a personalized learning roadmap with recommended depth per skill.
+SkillPilot is a hackathon MVP for **AI-era career and skill-gap guidance**. A user chooses one of three O*NET-backed roles, completes a short adaptive calibration chat, receives a skill-gap profile with depth recommendations, and gets a 90-day roadmap.
 
-Built for the JECRC Hackathon (Sept 12–13).
+## What is working
 
-## Tech Stack
-- **Frontend:** React (Vite) + Tailwind CSS
-- **Backend:** Python + FastAPI
-- **Database:** PostgreSQL
-- **AI:** LLM API integration
+- 3 roles from the included O*NET-derived `backend/app/data/dataset.json`
+- Dynamic role explorer and role detail pages
+- Guided role-specific chat with backend-managed sessions
+- User answers are converted into deterministic skill-level signals
+- Skill-gap analysis with FutureProof score
+- Depth calls: `MASTER`, `AI-AUGMENT`, `BASIC-AWARENESS`
+- Personalized 90-day roadmap
+- Local session persistence in the browser
+- Clean frontend/backend API contract
+- No external LLM or database is required for the demo, so the core flow works offline after dependencies are installed
 
-## Team
-- Komal & Garima — Frontend
-- Anushree — Backend
-- All three switch to backend once screens are built
+## Stack
 
-## Folder Structure
-```
+- Frontend: React + Vite + Tailwind CSS + React Router
+- Backend: Python + FastAPI + Pydantic
+- Data: JSON dataset containing O*NET occupation evidence
+
+## Project structure
+
+```text
 skillpilot/
-├── frontend/       # React + Tailwind app
-├── backend/        # FastAPI app
-├── docs/           # API contract + architecture notes
-└── README.md
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   └── services/
+│   └── package.json
+├── backend/
+│   ├── app/
+│   │   ├── data/dataset.json
+│   │   └── main.py
+│   └── requirements.txt
+└── docs/
 ```
-See `docs/architecture.md` for full data flow and `docs/api-contract.md` for endpoint specs.
 
----
+## Run locally
 
-## Setup — Frontend
+### 1. Backend
+
+Windows PowerShell:
+
+```powershell
+cd backend
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Mac/Linux:
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Backend: `http://127.0.0.1:8000`
+API docs: `http://127.0.0.1:8000/docs`
+
+### 2. Frontend
+
+Open a second terminal:
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-Runs at `http://localhost:5173`.
 
-Create a `.env` file in `frontend/` (not committed to git) with:
-```
-VITE_API_URL=http://localhost:8000
-```
+Frontend: `http://localhost:5173`
 
-## Setup — Backend
+If needed, create `frontend/.env`:
 
-```bash
-cd backend
-python -m venv venv
+```env
+VITE_API_URL=http://127.0.0.1:8000
 ```
 
-Activate the virtual environment:
-- **Windows (PowerShell):** `venv\Scripts\activate`
-- **Mac/Linux:** `source venv/bin/activate`
+## Demo flow
 
-Install dependencies:
-```bash
-pip install -r requirements.txt
+```text
+Landing
+  ↓
+Explore role
+  ↓
+Role detail
+  ↓
+4-question calibration chat
+  ↓
+Skill-gap analysis
+  ↓
+90-day roadmap
 ```
 
-Create a `.env` file in `backend/` (not committed to git) with:
-```
-DATABASE_URL=postgresql://user:password@localhost:5432/skillpilot
-LLM_API_KEY=your_key_here
-```
+For a hackathon demo, use **Data Scientist** first: it clearly shows the Human-Core / AI-Augment / AI-Accelerated depth framework.
 
-Run the server:
-```bash
-uvicorn app.main:app --reload
-```
-Runs at `http://localhost:8000`. Interactive API docs at `http://localhost:8000/docs`.
+## API
 
----
+- `GET /health`
+- `GET /roles`
+- `GET /roles/{role_id}`
+- `POST /chat/start`
+- `POST /chat/reply`
+- `GET /skill-gap/{session_id}`
+- `GET /roadmap/{session_id}`
 
-## Git Workflow
-
-1. Pull latest before starting work:
-   ```bash
-   git pull origin main
-   ```
-2. Make your changes.
-3. Stage, commit, push:
-   ```bash
-   git add .
-   git commit -m "short description of what you did"
-   git push origin main
-   ```
-
-If you hit a merge conflict, ping the team before force-pushing anything.
-
-## Where things go
-- New frontend screens → `frontend/src/pages/`
-- Reusable UI pieces → `frontend/src/components/`
-- API call functions → `frontend/src/services/api.js`
-- Fake data for building UI before backend is ready → `frontend/src/mocks/`
-- New backend routes → `backend/app/api/`
-- Scoring/roadmap logic → `backend/app/services/`
-- Dataset → `backend/app/data/futureproof_dataset.json`
+See `docs/api-contract.md` for the response shapes.
