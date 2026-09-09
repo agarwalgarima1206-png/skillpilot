@@ -1,4 +1,5 @@
 import os
+
 from dotenv import load_dotenv
 from google import genai
 
@@ -16,7 +17,7 @@ client = genai.Client(api_key=api_key)
 print("Calling Gemini...")
 
 response = client.models.generate_content(
-    model="gemini-3.6-flash"
+    model="gemini-3.6-flash",
     contents="Reply with exactly: Hello from SkillPilot AI",
 )
 
