@@ -4,3 +4,5 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: #fafafa; color: #171717; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
 button, a, input { -webkit-tap-highlight-color: transparent; }
 @media print { nav, .no-print { display: none !important; } body { background: white; } }
+.input { width: 100%; height: 44px; border: 1px solid #e5e7eb; border-radius: 12px; padding: 0 12px; font-size: 14px; outline: none; background: white; }
+.input:focus { border-color: #6366f1; }

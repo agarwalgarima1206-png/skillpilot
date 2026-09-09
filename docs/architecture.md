@@ -1,25 +1,18 @@
-# SkillPilot Architecture
+# SkillPilot architecture
 
-```text
-O*NET-derived JSON dataset
-          │
-          ▼
-   FastAPI role layer
-          │
-          ├── role metadata + evidence
-          ├── role-specific chat questions
-          └── deterministic calibration/scoring
-          │
-          ▼
-       React frontend
-          │
-          ├── Explore
-          ├── Role Detail
-          ├── Calibration Chat
-          ├── Skill Gap
-          └── 90-Day Roadmap
-```
+## Persistence
 
-The dataset provides occupation evidence. The SkillPilot product layer maps that evidence to three learning-depth calls: **MASTER**, **AI-AUGMENT**, and **BASIC-AWARENESS**.
+SQLite is the local source of truth and is created automatically at `backend/app/skillpilot.db` unless `SKILLPILOT_DB_PATH` is set.
 
-For the hackathon MVP, chat sessions are held in backend memory and the latest session is persisted in browser `localStorage`. PostgreSQL and an external LLM are intentionally not required for the core demo path; they can be added later without changing the main UI flow.
+Core tables:
+
+- `users` — account, profile and learning preferences
+- `analyses` — every assessment session and its saved results
+- `chat_messages` — complete per-assessment conversation history
+- `roadmaps` — versioned roadmaps; old versions are archived, not overwritten
+
+The frontend never relies on History to retrieve current data. Chat, Skill Gap and Roadmap each load the authenticated user's current data directly from the backend.
+
+## AI boundary
+
+The LLM is used for qualitative evaluation/personalization. Deterministic backend logic owns the final resilience formula, persistence, roadmap structure and progress state.
