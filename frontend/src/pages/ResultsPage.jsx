@@ -39,7 +39,9 @@ const depthDescriptions = {
 
 export default function ResultsPage() {
   const nav = useNavigate();
-  const { setUserProfile } = useUser();
+
+  // UPDATED: UserContext now provides updateUser()
+  const { updateUser } = useUser();
 
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
@@ -58,14 +60,13 @@ export default function ResultsPage() {
 
       setData(result);
 
-      // Keep local frontend context synchronized with the latest assessment.
-      if (setUserProfile) {
-        setUserProfile((prev) => ({
-          ...prev,
-          role: result.role || prev.role,
-          sessionId: result.session_id,
-          roleId: result.role_id,
-        }));
+      // Keep frontend context synchronized
+      if (updateUser) {
+        updateUser({
+          role: result.role || null,
+          roleId: result.role_id || null,
+          sessionId: result.session_id || null,
+        });
       }
     } catch (e) {
       setError(e.message || "Unable to load your skill gap.");
@@ -80,6 +81,15 @@ export default function ResultsPage() {
 
     try {
       const result = await reanalyze(data.session_id);
+
+      // Save the new assessment session
+      if (updateUser) {
+        updateUser({
+          role: result.role || data.role || null,
+          roleId: result.role_id || data.role_id || null,
+          sessionId: result.session_id || null,
+        });
+      }
 
       nav(`/chat?role=${result.role_id}`);
     } catch (e) {
@@ -97,9 +107,7 @@ export default function ResultsPage() {
             Your skill gap isn't ready yet.
           </h1>
 
-          <p className="mt-2 text-sm text-gray-500">
-            {error}
-          </p>
+          <p className="mt-2 text-sm text-gray-500">{error}</p>
 
           <Link
             to="/chat"
@@ -140,15 +148,11 @@ export default function ResultsPage() {
     breakdown.ai_collaboration ??
     0;
 
-  const score = Number(
-    data.ai_resilience_score ?? 0
-  );
+  const score = Number(data.ai_resilience_score ?? 0);
 
   const summary = data.summary || {};
 
-  const skills = Array.isArray(data.skills)
-    ? data.skills
-    : [];
+  const skills = Array.isArray(data.skills) ? data.skills : [];
 
   const scoreLabel =
     score >= 80
@@ -161,10 +165,7 @@ export default function ResultsPage() {
     <main className="min-h-[calc(100vh-68px)] bg-[#fafafa]">
       <div className="mx-auto max-w-6xl px-5 py-10">
 
-        {/* =====================================================
-            HEADER
-        ====================================================== */}
-
+        {/* HEADER */}
         <div className="flex flex-wrap items-end justify-between gap-5">
           <div>
             <p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-600">
@@ -183,7 +184,6 @@ export default function ResultsPage() {
           </div>
 
           {/* SCORE CARD */}
-
           <div className="rounded-2xl border bg-white px-8 py-6 text-center shadow-sm">
             <div className="flex items-center justify-center gap-2">
               <Sparkles size={16} className="text-indigo-600" />
@@ -203,17 +203,10 @@ export default function ResultsPage() {
           </div>
         </div>
 
-        {/* =====================================================
-            SCORE EXPLANATION
-        ====================================================== */}
-
+        {/* SCORE EXPLANATION */}
         <div className="mt-6 rounded-2xl border bg-white p-5 shadow-sm">
-
           <div className="flex items-center gap-2">
-            <BrainCircuit
-              size={18}
-              className="text-indigo-600"
-            />
+            <BrainCircuit size={18} className="text-indigo-600" />
 
             <h2 className="text-sm font-bold">
               How your score works
@@ -223,10 +216,7 @@ export default function ResultsPage() {
               title="This is a learning-readiness metric, not an employment prediction."
               className="cursor-help"
             >
-              <Info
-                size={14}
-                className="text-gray-400"
-              />
+              <Info size={14} className="text-gray-400" />
             </span>
           </div>
 
@@ -237,7 +227,6 @@ export default function ResultsPage() {
           </p>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
-
             <ScorePart
               label="Human judgment"
               value={humanCore}
@@ -255,16 +244,11 @@ export default function ResultsPage() {
               value={coverage}
               weight="15%"
             />
-
           </div>
         </div>
 
-        {/* =====================================================
-            SUMMARY STATS
-        ====================================================== */}
-
+        {/* SUMMARY STATS */}
         <div className="mt-6 grid gap-4 md:grid-cols-4">
-
           <Stat
             label="At / above target"
             value={summary.at_or_above_target ?? 0}
@@ -287,21 +271,13 @@ export default function ResultsPage() {
             label="Biggest lever"
             value={data.biggest_lever || "—"}
           />
-
         </div>
 
-        {/* =====================================================
-            INSIGHT BOX
-        ====================================================== */}
-
+        {/* INSIGHT BOX */}
         <div className="mt-6 rounded-2xl border border-indigo-100 bg-indigo-50/50 p-5">
-
           <div className="flex items-start gap-3">
             <div className="mt-0.5 rounded-lg bg-white p-2 shadow-sm">
-              <Sparkles
-                size={17}
-                className="text-indigo-600"
-              />
+              <Sparkles size={17} className="text-indigo-600" />
             </div>
 
             <div>
@@ -321,23 +297,13 @@ export default function ResultsPage() {
           </div>
         </div>
 
-        {/* =====================================================
-            MAIN CONTENT
-        ====================================================== */}
-
+        {/* MAIN CONTENT */}
         <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_320px]">
 
-          {/* ===================================================
-              SKILL MAP
-          ==================================================== */}
-
+          {/* SKILL MAP */}
           <section>
-
             <div className="mb-4 flex items-center gap-2">
-              <Network
-                size={18}
-                className="text-indigo-600"
-              />
+              <Network size={18} className="text-indigo-600" />
 
               <h2 className="font-serif text-2xl font-bold">
                 Skill map
@@ -345,11 +311,8 @@ export default function ResultsPage() {
             </div>
 
             <div className="grid gap-3 md:grid-cols-2">
-
               {skills.map((skill) => {
-
-                const isOpen =
-                  openDepth === skill.name;
+                const isOpen = openDepth === skill.name;
 
                 const current = Number(
                   skill.your_level_pct ?? 0
@@ -359,33 +322,23 @@ export default function ResultsPage() {
                   skill.role_target_pct ?? 0
                 );
 
-                const gap = Math.max(
-                  target - current,
-                  0
-                );
+                const gap = Math.max(target - current, 0);
 
-                // Gemini can provide these in newer results.
-                // Old assessments may not have them.
-                const evidence =
-                  Array.isArray(skill.evidence)
-                    ? skill.evidence
-                    : [];
+                const evidence = Array.isArray(skill.evidence)
+                  ? skill.evidence
+                  : [];
 
-                const gaps =
-                  Array.isArray(skill.gaps)
-                    ? skill.gaps
-                    : [];
+                const gaps = Array.isArray(skill.gaps)
+                  ? skill.gaps
+                  : [];
 
                 return (
                   <article
                     key={skill.name}
                     className="rounded-2xl border bg-white p-5 shadow-sm"
                   >
-
                     {/* TOP */}
-
                     <div className="flex items-start justify-between gap-3">
-
                       <div>
                         <h3 className="text-sm font-semibold text-gray-900">
                           {skill.name}
@@ -397,54 +350,41 @@ export default function ResultsPage() {
                       </div>
 
                       <span
-                        className={`rounded-lg px-2 py-1 text-[9px] font-bold ${depthClass[skill.depth_call] || "bg-gray-200 text-gray-700"}`}
+                        className={`rounded-lg px-2 py-1 text-[9px] font-bold ${
+                          depthClass[skill.depth_call] ||
+                          "bg-gray-200 text-gray-700"
+                        }`}
                       >
                         {depthLabels[skill.depth_call] ||
                           skill.depth_call}
                       </span>
-
                     </div>
 
                     {/* LEVEL */}
-
                     <div className="mt-5 flex justify-between text-[10px] text-gray-400">
-                      <span>
-                        You {current}%
-                      </span>
+                      <span>You {current}%</span>
 
-                      <span>
-                        Target {target}%
-                      </span>
+                      <span>Target {target}%</span>
                     </div>
 
                     <div className="relative mt-1 h-2 rounded-full bg-gray-100">
-
                       <div
                         className="h-full rounded-full bg-gray-900 transition-all"
                         style={{
-                          width: `${Math.min(
-                            current,
-                            100
-                          )}%`,
+                          width: `${Math.min(current, 100)}%`,
                         }}
                       />
 
                       <div
                         className="absolute top-[-3px] h-4 w-0.5 bg-indigo-600"
                         style={{
-                          left: `${Math.min(
-                            target,
-                            100
-                          )}%`,
+                          left: `${Math.min(target, 100)}%`,
                         }}
                       />
-
                     </div>
 
                     {/* GAP */}
-
                     <div className="mt-3 flex items-center justify-between">
-
                       <p className="text-xs leading-5 text-gray-500">
                         {skill.note}
                       </p>
@@ -454,18 +394,12 @@ export default function ResultsPage() {
                           Gap {gap}%
                         </span>
                       )}
-
                     </div>
 
                     {/* WHY DEPTH */}
-
                     <button
                       onClick={() =>
-                        setOpenDepth(
-                          isOpen
-                            ? null
-                            : skill.name
-                        )
+                        setOpenDepth(isOpen ? null : skill.name)
                       }
                       className="mt-4 flex w-full items-center justify-between border-t pt-3 text-left"
                     >
@@ -488,92 +422,70 @@ export default function ResultsPage() {
 
                     {isOpen && (
                       <div className="mt-3 rounded-xl bg-gray-50 p-3">
-
                         <p className="text-xs leading-5 text-gray-600">
-                          {depthDescriptions[
-                            skill.depth_call
-                          ] ||
+                          {depthDescriptions[skill.depth_call] ||
                             "Skill depth is based on the role's expected level and how AI changes the way this skill is performed."}
                         </p>
 
                         {/* EVIDENCE */}
-
                         {evidence.length > 0 && (
                           <div className="mt-4">
-
                             <p className="mb-2 text-[10px] font-bold uppercase tracking-wider text-gray-400">
                               Evidence detected
                             </p>
 
                             <div className="space-y-2">
-                              {evidence.map(
-                                (item, index) => (
-                                  <div
-                                    key={index}
-                                    className="flex gap-2 text-xs text-gray-600"
-                                  >
-                                    <CheckCircle2
-                                      size={13}
-                                      className="mt-0.5 shrink-0 text-green-600"
-                                    />
+                              {evidence.map((item, index) => (
+                                <div
+                                  key={index}
+                                  className="flex gap-2 text-xs text-gray-600"
+                                >
+                                  <CheckCircle2
+                                    size={13}
+                                    className="mt-0.5 shrink-0 text-green-600"
+                                  />
 
-                                    <span>
-                                      {item}
-                                    </span>
-                                  </div>
-                                )
-                              )}
+                                  <span>{item}</span>
+                                </div>
+                              ))}
                             </div>
                           </div>
                         )}
 
                         {/* GAPS */}
-
                         {gaps.length > 0 && (
                           <div className="mt-4">
-
                             <p className="mb-2 text-[10px] font-bold uppercase tracking-wider text-gray-400">
                               Gaps detected
                             </p>
 
                             <div className="space-y-2">
-                              {gaps.map(
-                                (item, index) => (
-                                  <div
-                                    key={index}
-                                    className="flex gap-2 text-xs text-gray-600"
-                                  >
-                                    <AlertCircle
-                                      size={13}
-                                      className="mt-0.5 shrink-0 text-orange-500"
-                                    />
+                              {gaps.map((item, index) => (
+                                <div
+                                  key={index}
+                                  className="flex gap-2 text-xs text-gray-600"
+                                >
+                                  <AlertCircle
+                                    size={13}
+                                    className="mt-0.5 shrink-0 text-orange-500"
+                                  />
 
-                                    <span>
-                                      {item}
-                                    </span>
-                                  </div>
-                                )
-                              )}
+                                  <span>{item}</span>
+                                </div>
+                              ))}
                             </div>
                           </div>
                         )}
-
                       </div>
                     )}
-
                   </article>
                 );
               })}
-
             </div>
           </section>
 
-          {/* =================================================
-              RIGHT SIDE
-          ================================================= */}
-
+          {/* RIGHT SIDE */}
           <aside className="h-fit rounded-2xl border bg-white p-5 shadow-sm">
-
             <p className="text-xs font-bold uppercase tracking-wider text-indigo-600">
               WHAT NEXT?
             </p>
@@ -602,9 +514,7 @@ export default function ResultsPage() {
             >
               <RotateCcw size={14} />
 
-              {busy
-                ? "Starting…"
-                : "Re-assess me"}
+              {busy ? "Starting…" : "Re-assess me"}
             </button>
 
             <p className="mt-3 text-[10px] leading-4 text-gray-400">
@@ -613,7 +523,6 @@ export default function ResultsPage() {
             </p>
 
             <div className="mt-5 border-t pt-4">
-
               <div className="flex items-start gap-2">
                 <Info
                   size={14}
@@ -626,12 +535,9 @@ export default function ResultsPage() {
                   should be learned to the same level.
                 </p>
               </div>
-
             </div>
           </aside>
-
         </div>
-
       </div>
     </main>
   );
@@ -644,7 +550,6 @@ export default function ResultsPage() {
 function Stat({ label, value }) {
   return (
     <div className="rounded-xl border bg-white p-5 shadow-sm">
-
       <p className="truncate text-2xl font-bold text-gray-900">
         {value}
       </p>
@@ -652,48 +557,34 @@ function Stat({ label, value }) {
       <p className="mt-1 text-xs text-gray-500">
         {label}
       </p>
-
     </div>
   );
 }
 
-function ScorePart({
-  label,
-  value,
-  weight,
-}) {
+function ScorePart({ label, value, weight }) {
   const safeValue = Math.max(
     0,
-    Math.min(
-      100,
-      Number(value) || 0
-    )
+    Math.min(100, Number(value) || 0)
   );
 
   return (
     <div className="rounded-xl bg-gray-50 p-3">
-
       <div className="flex justify-between text-xs font-semibold">
-
         <span>{label}</span>
 
         <span>
           {safeValue}% · {weight}
         </span>
-
       </div>
 
       <div className="mt-2 h-1.5 rounded-full bg-gray-200">
-
         <div
           className="h-full rounded-full bg-indigo-600 transition-all"
           style={{
             width: `${safeValue}%`,
           }}
         />
-
       </div>
-
     </div>
   );
 }
