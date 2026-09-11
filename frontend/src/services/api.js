@@ -30,3 +30,4 @@ export const adaptRoadmap = (sessionId, payload) => request(`/roadmap/${sessionI
 export const getRoadmapHistory = () => request("/roadmap/history");
 export const getAnalyses = () => request("/analyses");
 export const reanalyze = (sessionId) => request(`/reanalyze/${sessionId}`, { method:"POST" });
+export const getEarlyWarning = () => request("/me/early-warning");

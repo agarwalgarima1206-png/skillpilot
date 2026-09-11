@@ -143,7 +143,7 @@ export default function ChatPage() {
       );
 
       setComplete(session.status === "complete");
-      setOptions([]);
+      setOptions(r.quick_replies || []);
 
       saveSessionContext(session.session_id, currentRole);
     } catch (e) {
@@ -194,7 +194,7 @@ export default function ChatPage() {
               r.status === "completed"
           );
 
-          setOptions([]);
+          setOptions(r.quick_replies || []);
 
           saveSessionContext(
             requestedSession,
@@ -562,30 +562,32 @@ export default function ChatPage() {
                     </p>
 
                     <p className="text-xs text-gray-500">
-                      Your answers are ready for skill-gap
-                      analysis.
+                      Your baseline risk is ready.
+                    </p>
+
+                    <p className="text-xs text-gray-500">
+                      The risk is established from this assessment; Skill Gap and Roadmap are downstream views.
                     </p>
                   </div>
 
                   <div className="flex gap-2">
 
                     <button
-                      onClick={() =>
-                        nav("/skill-gap")
-                      }
+                      onClick={() => nav("/early-warning")}
                       className="rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700"
                     >
-                      Skill Gap{" "}
-                      <ArrowRight
-                        className="ml-1 inline"
-                        size={14}
-                      />
+                      View Risk <ArrowRight className="ml-1 inline" size={14} />
                     </button>
 
                     <button
-                      onClick={() =>
-                        nav("/roadmap")
-                      }
+                      onClick={() => nav("/skill-gap")}
+                      className="rounded-xl border bg-white px-4 py-2.5 text-sm font-semibold hover:bg-gray-50"
+                    >
+                      Skill Gap
+                    </button>
+
+                    <button
+                      onClick={() => nav("/roadmap")}
                       className="rounded-xl border bg-white px-4 py-2.5 text-sm font-semibold hover:bg-gray-50"
                     >
                       Roadmap

@@ -358,7 +358,8 @@ Return ONLY JSON:
   "next_question": "question text",
   "target_skill": "skill being tested",
   "difficulty": "basic|intermediate|advanced",
-  "reason": "why this question is the next best question"
+  "reason": "why this question is the next best question",
+  "quick_replies": ["short suggested answer 1", "short suggested answer 2", "short suggested answer 3", "short suggested answer 4"]
 }}
 """
 
@@ -380,6 +381,11 @@ Return ONLY JSON:
         "reason": str(
             result.get("reason", "")
         ).strip(),
+        "quick_replies": [
+            str(x).strip()
+            for x in (result.get("quick_replies") or [])
+            if str(x).strip()
+        ][:4],
     }
 
 

@@ -43,3 +43,9 @@ Returns three phases, grouped by depth:
 3. Awareness & Ship — days 61–90
 
 Each roadmap item includes estimated weekly hours, a resource type, and status.
+
+## GET /me/early-warning
+
+Returns the stable v1 early-warning contract in `contracts/early-warning-v1.json`.
+The current fallback is a deterministic product signal based on available SkillPilot assessment evidence.
+It is explicitly marked `ED-02_pending` until the OULAD benchmark model is trained and wired into the service.

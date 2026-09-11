@@ -36,6 +36,8 @@ from app.services.assessment_service import (
     build_score_explanation,
 )
 
+from app.services.early_warning_service import build_product_early_warning
+
 # ============================================================
 # LEGACY OPENAI SUPPORT
 # ============================================================
@@ -2121,7 +2123,14 @@ def chat_reply(data: ChatReply, user=Depends(current_user)):
 
     next_question = next_data["next_question"]
     target_skill = next_data.get("target_skill") or qs[index + 1][0]
-    quick_replies = qs[index + 1][2] if next_question == qs[index + 1][1] else []
+    quick_replies = next_data.get("quick_replies") or []
+    if not quick_replies:
+        quick_replies = qs[index + 1][2] if next_question == qs[index + 1][1] else [
+            "I am a beginner in this area.",
+            "I have some practical experience.",
+            "I am comfortable with this topic.",
+            "I can explain and apply this confidently.",
+        ]
 
     ack = generate_supportive_acknowledgement(
         role_title=role["title"],
@@ -2304,6 +2313,52 @@ def skill_gap(
         user["id"],
     )
 
+
+# ============================================================
+# EARLY WARNING
+# ============================================================
+
+@app.get("/me/early-warning")
+def current_early_warning(user=Depends(current_user)):
+    """Return the baseline early-warning signal from the latest completed assessment.
+
+    Important product rule: this is available immediately after the adaptive assessment
+    completes. Skill Gap and Roadmap are downstream views generated from the same
+    assessment evidence; they are not inputs required to define baseline risk.
+    """
+    conn = db()
+    row = conn.execute(
+        """
+        SELECT * FROM analyses
+        WHERE user_id=? AND status='complete'
+        ORDER BY updated_at DESC LIMIT 1
+        """,
+        (user["id"],),
+    ).fetchone()
+    conn.close()
+
+    if not row:
+        raise HTTPException(404, "Complete the adaptive assessment to establish your baseline risk.")
+
+    saved = json.loads(row["results_json"] or "{}")
+    if isinstance(saved, list):
+        skills = saved
+        answers = json.loads(row["answers_json"] or "{}")
+    else:
+        skills = saved.get("skills", [])
+        answers = saved.get("answers", json.loads(row["answers_json"] or "{}"))
+
+    result = build_product_early_warning(
+        skills=skills,
+        answers=answers,
+        stage="baseline",
+    )
+    result["session_id"] = row["session_id"]
+    result["source_note"] = (
+        "Baseline risk is established from the completed adaptive assessment. "
+        "Skill Gap and Roadmap are downstream actions, not prerequisites for this score."
+    )
+    return result
 
 # ============================================================
 # ROADMAP STORAGE

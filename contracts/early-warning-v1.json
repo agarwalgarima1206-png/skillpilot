@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SkillPilot Early Warning v1",
+  "type": "object",
+  "required": ["prediction", "explanation", "stability", "intervention", "metadata"],
+  "properties": {
+    "prediction": {"type": "object", "required": ["probability", "band", "confidence"], "properties": {"probability": {"type": "number", "minimum": 0, "maximum": 1}, "band": {"type": "string", "enum": ["low", "moderate", "high"]}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "stage": {"type": "string", "enum": ["baseline", "updated"]}, "is_baseline": {"type": "boolean"}}},
+    "explanation": {"type": "object", "required": ["features", "compactness"], "properties": {"features": {"type": "array", "items": {"type": "object", "required": ["name", "attribution", "evidence"], "properties": {"name": {"type": "string"}, "attribution": {"type": "number", "minimum": 0, "maximum": 1}, "evidence": {"type": "string"}}}}, "compactness": {"type": "number", "minimum": 0, "maximum": 1}}},
+    "stability": {"type": "object", "required": ["score", "perturbations_tested"], "properties": {"score": {"type": "number", "minimum": 0, "maximum": 1}, "perturbations_tested": {"type": "integer", "minimum": 0}, "status": {"type": "string"}}},
+    "intervention": {"type": "object", "required": ["priority", "actions"], "properties": {"priority": {"type": "string", "enum": ["low", "moderate", "high"]}, "actions": {"type": "array", "items": {"type": "string"}}}},
+    "metadata": {"type": "object", "required": ["model_version", "feature_version", "source"], "properties": {"model_version": {"type": "string"}, "feature_version": {"type": "string"}, "source": {"type": "string"}, "risk_basis": {"type": "string"}, "benchmark": {"type": "string"}}}
+  }
+}

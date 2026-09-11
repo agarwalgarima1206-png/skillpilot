@@ -4,7 +4,7 @@ import { useUser } from "../context/UserContext";
 import { setAuthToken } from "../services/api";
 export default function Navbar(){
  const location=useLocation(), navigate=useNavigate(); const {name,target_role,logout}=useUser();
- const links=[["/explore","Explore"],["/chat","AI Chat"],["/skill-gap","Skill Gap"],["/roadmap","Roadmap"],["/history","History"]];
+ const links=[["/explore","Explore"],["/chat","AI Chat"],["/skill-gap","Skill Gap"],["/early-warning","Early Warning"],["/roadmap","Roadmap"],["/history","History"]];
  const signout=()=>{setAuthToken(null);logout();navigate("/")};
  return <nav className="sticky top-0 z-30 h-[68px] border-b border-gray-200 bg-white/95 backdrop-blur"><div className="mx-auto flex h-full max-w-7xl items-center justify-between px-5">
   <Link to="/explore" className="flex items-center gap-2 font-serif text-xl font-semibold"><span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white"><Sparkles size={16}/></span>SkillPilot</Link>
