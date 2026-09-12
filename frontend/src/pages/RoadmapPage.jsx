@@ -35,6 +35,7 @@ export default function RoadmapPage() {
 
   const [saving, setSaving] = useState(false);
   const [progressSaving, setProgressSaving] = useState(false);
+  const [success, setSuccess] = useState("");
 
   // ============================================================
   // LOAD CURRENT ROADMAP
@@ -104,6 +105,7 @@ export default function RoadmapPage() {
     try {
       setSaving(true);
       setError("");
+      setSuccess("");
 
       const roadmap = await createRoadmap(data.assessment_id, {
         duration_months: Number(duration),
@@ -115,8 +117,10 @@ export default function RoadmapPage() {
         ...roadmap,
         assessment_id: data.assessment_id,
       });
+      setSuccess("Roadmap updated successfully.");
     } catch (e) {
       setError(e.message || "Failed to update roadmap.");
+      setSuccess("");
     } finally {
       setSaving(false);
     }
@@ -132,6 +136,7 @@ export default function RoadmapPage() {
     try {
       setSaving(true);
       setError("");
+      setSuccess("");
 
       const roadmap = await adaptRoadmap(data.assessment_id, {
         reason,
@@ -146,8 +151,10 @@ export default function RoadmapPage() {
       setShowAdapt(false);
       setReason("");
       setDetails("");
+      setSuccess("Roadmap adapted successfully.");
     } catch (e) {
       setError(e.message || "Failed to adapt roadmap.");
+      setSuccess("");
     } finally {
       setSaving(false);
     }
@@ -278,6 +285,12 @@ export default function RoadmapPage() {
           </div>
         )}
 
+        {success && !error && (
+          <div className="mt-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
+            {success}
+          </div>
+        )}
+
         {/* ======================================================
             PROGRESS + ROADMAP DESIGN
         ======================================================= */}
@@ -340,11 +353,10 @@ export default function RoadmapPage() {
               <button
                 key={x}
                 onClick={() => setDuration(x)}
-                className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${
-                  duration === x
+                className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${duration === x
                     ? "border-indigo-600 bg-indigo-50 text-indigo-700"
                     : "bg-white text-gray-600 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 {x} months
               </button>
@@ -356,7 +368,8 @@ export default function RoadmapPage() {
               max="24"
               value={duration}
               onChange={(e) => setDuration(Number(e.target.value))}
-              className="w-24 rounded-full border px-3 py-1.5 text-xs"
+              disabled={saving}
+              className="w-24 rounded-full border px-3 py-1.5 text-xs disabled:cursor-not-allowed disabled:bg-gray-50"
             />
 
             <span className="text-[10px] text-gray-400">
@@ -366,7 +379,8 @@ export default function RoadmapPage() {
             <select
               value={goal}
               onChange={(e) => setGoal(e.target.value)}
-              className="rounded-full border px-3 py-1.5 text-xs"
+              disabled={saving}
+              className="rounded-full border px-3 py-1.5 text-xs disabled:cursor-not-allowed disabled:bg-gray-50"
             >
               <option>Job Ready</option>
               <option>Internship</option>
@@ -383,8 +397,12 @@ export default function RoadmapPage() {
                 min="1"
                 max="40"
                 value={hours}
-                onChange={(e) => setHours(Number(e.target.value))}
-                className="ml-2 align-middle"
+                onChange={(e) => {
+                  setHours(Number(e.target.value));
+                  setSuccess("");
+                }}
+                disabled={saving}
+                className="ml-2 align-middle disabled:opacity-50"
               />
             </label>
 
@@ -465,8 +483,8 @@ export default function RoadmapPage() {
 
                         const skillProgress = skillTasks.length
                           ? Math.round(
-                              (skillCompleted / skillTasks.length) * 100
-                            )
+                            (skillCompleted / skillTasks.length) * 100
+                          )
                           : 0;
 
                         return (
@@ -679,11 +697,10 @@ export default function RoadmapPage() {
                   <button
                     key={option}
                     onClick={() => setReason(option)}
-                    className={`rounded-xl border px-3 py-2 text-left text-xs transition ${
-                      reason === option
+                    className={`rounded-xl border px-3 py-2 text-left text-xs transition ${reason === option
                         ? "border-indigo-500 bg-indigo-50 text-indigo-700"
                         : "hover:bg-gray-50"
-                    }`}
+                      }`}
                   >
                     {option}
                   </button>

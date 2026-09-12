@@ -17,7 +17,7 @@ client = genai.Client(api_key=api_key)
 print("Calling Gemini...")
 
 response = client.models.generate_content(
-    model="gemini-3.6-flash",
+    model="gemini-3.5-flash-lite",
     contents="Reply with exactly: Hello from SkillPilot AI",
 )
 

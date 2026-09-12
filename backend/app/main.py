@@ -2740,7 +2740,28 @@ def roadmap_adapt(
         user["id"],
     )
 
-    old = current_roadmap(user)
+    # Load the roadmap for THIS assessment/session, not whichever roadmap
+    # happens to be globally active for the user. This prevents adaptation
+    # requests from accidentally rebuilding an older assessment's roadmap.
+    conn = db()
+    old_row = conn.execute(
+        """
+        SELECT data_json
+        FROM roadmaps
+        WHERE assessment_id=?
+        AND user_id=?
+        ORDER BY updated_at DESC
+        LIMIT 1
+        """,
+        (session_id, user["id"]),
+    ).fetchone()
+    conn.close()
+
+    old = (
+        json.loads(old_row["data_json"] or "{}")
+        if old_row
+        else {}
+    )
 
     duration = (
         data.duration_months
@@ -2772,8 +2793,13 @@ def roadmap_adapt(
         )
     )
 
-    llm = generate_json(
-        f"""
+    # Gemini is an enhancement, not a dependency of the Apply/Rebuild action.
+    # If the LLM is unavailable, keep the user's current values and continue
+    # rebuilding the roadmap deterministically instead of returning HTTP 500.
+    llm = None
+    try:
+        llm = generate_json(
+            f"""
 Return ONLY JSON:
 
 {{
@@ -2797,9 +2823,11 @@ Details:
 
 Keep values realistic.
 """
-    )
+        )
+    except Exception as exc:
+        print(f"[Roadmap Adapt] Gemini unavailable: {exc}")
 
-    if llm:
+    if isinstance(llm, dict):
 
         duration = max(
             1,
