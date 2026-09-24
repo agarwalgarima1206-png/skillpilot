@@ -195,7 +195,7 @@ These results represent the performance of the current OULAD benchmark pipeline 
           │                    │                    │
           ▼                    ▼                    ▼
    ┌─────────────┐      ┌──────────────┐     ┌─────────────┐
-   │ AI Services │      │ ML Services  │     │ PostgreSQL  │
+   │ AI Services │      │ ML Services  │     │     SQL     │
    │ Gemini/LLM  │      │ OULAD Model  │     │  Database   │
    └─────────────┘      └──────────────┘     └─────────────┘
           │                    │
