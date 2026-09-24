@@ -27,6 +27,7 @@ from app.services.gemini_service import (
     generate_next_question,
     generate_assessment_summary,
     generate_supportive_acknowledgement,
+    generate_json,
     gemini_status,
 )
 
