@@ -528,11 +528,3 @@ The long-term goal is to build an intelligent learning companion that continuous
 ### Team
 
 Built with ❤️ by the SkillPilot team.
-
----
-
-## 📄 License
-
-This project is currently intended for educational, research, and hackathon purposes.
-
-Add the appropriate open-source license here if the project is later released under one.
